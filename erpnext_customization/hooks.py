@@ -7,13 +7,26 @@ app_publisher = "britlog"
 app_description = "App to maintain custom changes"
 app_icon = "octicon octicon-file-directory"
 app_color = "grey"
-app_email = "info@britlog.com"
 app_version = "0.0.1"
+app_email = "info@britlog.com"
 app_license = "MIT"
+source_link = "https://github.com/britlog/erpnext_customization"
+
 fixtures = ["Custom Field",
 "Property Setter",
 "Custom Script",
 "Print Format"]
+
+
+# website
+update_website_context = "erpnext_customization.website.utils.update_website_context"
+
+#website_context = {
+#	"footer_company_name": 	"settings.footer_company_name"
+#}
+
+
+
 
 # Includes in <head>
 # ------------------
