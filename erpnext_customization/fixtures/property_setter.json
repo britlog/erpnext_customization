@@ -1,6 +1,58 @@
 [
  {
   "default_value": null, 
+  "doc_type": "Web Page", 
+  "docstatus": 0, 
+  "doctype": "Property Setter", 
+  "doctype_or_field": "DocType", 
+  "field_name": null, 
+  "modified": "2016-05-01 19:44:20.797537", 
+  "name": "Web Page-read_only_onload", 
+  "property": "read_only_onload", 
+  "property_type": "Check", 
+  "value": null
+ }, 
+ {
+  "default_value": null, 
+  "doc_type": "Web Page", 
+  "docstatus": 0, 
+  "doctype": "Property Setter", 
+  "doctype_or_field": "DocField", 
+  "field_name": "description", 
+  "modified": "2016-05-01 19:44:20.828544", 
+  "name": "Web Page-description-options", 
+  "property": "options", 
+  "property_type": "Text", 
+  "value": ""
+ }, 
+ {
+  "default_value": null, 
+  "doc_type": "Email Account", 
+  "docstatus": 0, 
+  "doctype": "Property Setter", 
+  "doctype_or_field": "DocField", 
+  "field_name": "service", 
+  "modified": "2016-04-27 18:41:05.959713", 
+  "name": "Email Account-service-options", 
+  "property": "options", 
+  "property_type": "Text", 
+  "value": "\nGMail\nOutlook.com\nSendGrid\nYahoo Mail\nYandex.Mail"
+ }, 
+ {
+  "default_value": null, 
+  "doc_type": "Newsletter List Subscriber", 
+  "docstatus": 0, 
+  "doctype": "Property Setter", 
+  "doctype_or_field": "DocField", 
+  "field_name": "email", 
+  "modified": "2016-04-30 12:22:16.950252", 
+  "name": "Newsletter List Subscriber-email-width", 
+  "property": "width", 
+  "property_type": null, 
+  "value": "242"
+ }, 
+ {
+  "default_value": null, 
   "doc_type": "Item", 
   "docstatus": 0, 
   "doctype": "Property Setter", 
