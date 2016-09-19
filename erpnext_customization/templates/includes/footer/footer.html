@@ -1,0 +1,42 @@
+<footer class="web-footer">
+	<section class="footer-links">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 web-footer-menu">
+					{{ footer_company_name }}
+					<ul>
+						{% for item in footer_items %}
+						<li><a href="{{ item.url }}" {{ item.target }}
+							data-label="{{ item.label }}">{{ item.label }}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+
+				{% block extension %}{% include "templates/includes/footer/footer_extension.html" %}{% endblock %}
+
+				<div class="col-sm-4 text-center">
+					{% if footer_address %}{{ footer_address }}{% endif %}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					{% if copyright %}<div class="web-footer-copyright text-muted small">&copy; {{ copyright }}</div>{% endif %}
+				</div>
+				<div class="col-sm-6 text-center">
+					{% if facebook_link %}{{ facebook_link }}{% endif %}
+				</div>
+				<div class="col-sm-3">
+					{# powered #}
+					<div class="text-right footer-powered">
+					{% block powered %}
+						{% include "templates/includes/footer/footer_powered.html" %}
+					{% endblock %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+
+	</section>
+</footer>

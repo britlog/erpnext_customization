@@ -1,0 +1,14 @@
+.web-footer {
+  padding: 20px 0px;
+  min-height: 140px;
+  border-top: 1px solid #EBEFF2;
+}
+.page-container {
+  padding: 0px;
+  max-width: 1170px;
+  margin: auto;
+}
+.page-max-width {
+  max-width: 1000px;
+  margin: auto;
+}

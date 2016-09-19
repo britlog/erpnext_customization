@@ -1,1 +1,5 @@
 apps/erpnext_customization/erpnext_customization/config/desktop.py +12,Erpnext Customization,
+apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +9,Get Updates,S'inscrire à la newsletter
+apps/frappe/frappe/email/doctype/newsletter/newsletter.py +136,Thank you for your interest in subscribing to our updates,Merci de votre intérêt en vous abonnant à notre lettre d'informations
+apps/frappe/frappe/email/doctype/newsletter/newsletter.py +137,Please verify your email id,Vérifiez s'il vous plaît votre adresse email
+apps/frappe/frappe/email/doctype/newsletter/newsletter.py +147,Confirm Your Email,Confirmez votre Email
