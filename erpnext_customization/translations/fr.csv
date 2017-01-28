@@ -2,8 +2,91 @@ apps/erpnext_customization/erpnext_customization/config/desktop.py +12,Erpnext C
 apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +9,Get Updates,S'inscrire à la newsletter
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +136,Thank you for your interest in subscribing to our updates,Merci de votre intérêt en vous abonnant à notre lettre d'informations
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +137,Please verify your email id,Vérifiez s'il vous plaît votre adresse email
-apps/frappe/frappe/email/doctype/newsletter/newsletter.py +147,Confirm Your Email,Confirmez votre Email
+apps/frappe/frappe/email/doctype/newsletter/newsletter.py +147,Confirm Your Email,Confirmez votre email
 DocType: Purchase Invoice Item,Is Fixed Asset,Est immobilisé
 DocType: Report,Disabled,Désactivé
-DocType: Item,Standard Selling Rate,Prix de vente standard
-DocType: Appraisal,Employee,Employé
+apps/frappe/frappe/www/login.html +18,Email address,Adresse email
+,POS,PDV
+apps/erpnext/erpnext/selling/doctype/customer/customer_dashboard.py +10,Pre Sales,Avant-vente
+apps/erpnext/erpnext/public/js/utils.js +116,Total Unpaid: {0},Total impayé: {0}
+DocType: Purchase Invoice,Print Language,Langue d'impression
+DocType: Supplier,Credit Days Based On,Jours de crédit basés sur
+DocType: Pricing Rule,Sales Partner,Partenaire commercial
+DocType: Sales Invoice,Sales Team,Équipe de vente
+DocType: Sales Invoice,Time Sheet List,Liste des temps
+DocType: Purchase Invoice,Additional Discount,Remise supplémentaire
+DocType: Sales Invoice,Get Advances Received,Voir acomptes reçus
+DocType: Item,Allow over delivery or receipt upto this percent,Autoriser livraison ou réception excédentaire jusqu'à ce pourcentage
+DocType: Item,Default Material Request Type,Type de demande matériel par défaut
+DocType: Item,Material Issue,Problème matériel
+DocType: Item,Will also apply for variants unless overrridden,S'appliquera également pour les variantes sauf surchargées
+DocType: Item,Will also apply to variants,S'appliquera également aux variantes
+DocType: Item,Will also apply for variants,S'appliquera également aux variantes
+DocType: Item,Supply Raw Materials for Purchase,Fournir les matières premières pour l'achat
+DocType: Item Group,Show in Website,Afficher sur le site Web
+apps/erpnext/erpnext/config/accounts.py +80,Masters,Bases
+DocType: Asset,Purchase Invoice,Facture d'achat
+DocType: Payment Request,Payment Request,Demande de paiement
+DocType: Bank Reconciliation Detail,Payment Entry,Enregistrement d'un règlement
+DocType: Depreciation Schedule,Journal Entry,Ecriture comptable
+DocType: Journal Entry,Accounts Receivable,Créances clients
+DocType: Journal Entry,Accounts Payable,Dettes fournisseurs
+apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.js +18,General Ledger,Grand livre
+DocType: Letter Head,Letter Head,En-tête
+DocType: Journal Entry,Print Heading,Intitulé d'impression
+DocType: Workflow State,Barcode,Code-barres
+apps/erpnext/erpnext/templates/print_formats/includes/taxes.html +5,Discount Amount,Remise
+DocType: C-Form Invoice Detail,Grand Total,Total TTC
+DocType: Print Settings,Send Print as PDF,Envoyer les documents en PDF
+DocType: Print Settings,Send Email Print Attachments as PDF (Recommended),Envoi les documents par email en PDF (recommandé)
+DocType: Print Settings,Repeat Header and Footer in PDF,Répétez en-tête et pied de page dans le PDF
+DocType: Print Settings,Send document web view link in email,Envoyer un lien d'affichage web du document dans l'email
+DocType: Print Settings,Compact Item Print,Limiter impression article
+DocType: Print Settings,"Always add ""Draft"" Heading for printing draft documents",Toujours ajouter l'en-tête ""Brouillon"" pour l'impression des brouillons
+DocType: Journal Entry,Write Off Amount,Montant de la perte
+DocType: POS Profile,Write Off Account,Compte créance irrécouvrable
+DocType: POS Profile,Write Off Cost Center,Centre de coûts créance irrécouvrable
+DocType: Journal Entry,Write Off,Annulation de dette
+DocType: Purchase Invoice,Posting Time,Heure d'enregistrement
+DocType: Sales Invoice,Is Opening Entry,Est une écriture d'entrée
+DocType: Sales Team,Contribution to Net Total,Contribution au Total net
+DocType: Purchase Invoice,Terms,Termes
+apps/erpnext/erpnext/config/accounts.py +107,Accounting Statements,Etats comptables
+apps/erpnext/erpnext/config/accounts.py +136,Banking and Payments,Opérations bancaires et paiements
+apps/erpnext/erpnext/config/accounts.py +140,Update Bank Transaction Dates,Mettre à jour les dates de transaction
+apps/erpnext/erpnext/config/accounts.py +146,Match Payments with Invoices,Lettrage comptable
+,Bank Reconciliation Statement,État de rapprochement bancaire
+,Bank Clearance Summary,Synthèse de la compensation bancaire
+DocType: Item,Moving Average,Prix Moyen Pondéré
+DocType: Account,Warehouse,Entrepôt
+apps/erpnext/erpnext/config/learn.py +112,Newsletters,Newsletters
+apps/erpnext/erpnext/stock/doctype/item/item.js +51,This Item is a Template and cannot be used in transactions. Item attributes will be copied over into the variants unless 'No Copy' is set,Cet article est un modèle et ne peut être utilisé dans les transactions. Les attributs de l'article seront copiés dans les variantes à moins que 'No Copy' soit coché
+DocType: BOM,Scrap,Rebut
+,BOM Browser,Navigateur nomenclatures
+DocType: BOM Operation,Workstation,Station de travail
+DocType: BOM Replace Tool,BOM Replace Tool,Outil de remplacement de nomenclature
+DocType: Purchase Invoice Item,BOM,Nomenclature
+DocType: BOM,Rate Of Materials Based On,Prix des matériaux basé sur
+DocType: Workstation,Operating Costs,Coûts opérationnels
+DocType: BOM,Manage cost of operations,Gérer le coût des opérations
+DocType: Account,Income Account,Compte de produits
+DocType: Company,Default Income Account,Compte de produits par défaut
+DocType: Sales Invoice,Against Income Account,Sur le compte de produits
+DocType: Account,Expense Account,Compte de charges
+DocType: Item Group,Default Expense Account,Compte de charges par défaut
+DocType: Purchase Invoice,Against Expense Account,Sur le compte de charges
+DocType: DocType,DocType,DocType
+apps/frappe/frappe/config/setup.py +263,Custom Tags,Balises personnalisées
+DocType: Workflow State,Primary,Principal
+apps/frappe/frappe/public/js/frappe/views/communication.js +74,Attach Document Print,Joindre l'impression du document
+apps/frappe/frappe/public/js/frappe/views/communication.js +66,Send me a copy,M'envoyer une copie
+apps/frappe/frappe/public/js/frappe/views/communication.js +81,Select Attachments,Sélectionnez les pièces jointes
+DocType: Workflow State,Print,Imprimer
+apps/frappe/frappe/print/doctype/print_format/print_format.js +31,Make Default,Définir par défaut
+DocType: User,Send Notifications for Transactions I Follow,Envoyer des notifications pour les transactions que je suis
+apps/erpnext/erpnext/controllers/accounts_controller.py +83,Note: Payment Entry will not be created since 'Cash or Bank Account' was not specified,Remarque: le règlement ne sera pas enregistré tant que le compte 'Cash ou compte bancaire' n'aura pas été spécifié
+DocType: Purchase Taxes and Charges,Account Head,Intitulé du compte
+DocType: Purchase Taxes and Charges,Is this Tax included in Basic Rate?,Cette taxe est-elle incluse dans le prix de base?
+DocType: Purchase Taxes and Charges,"If checked, the tax amount will be considered as already included in the Print Rate / Print Amount","Si elle est cochée, le montant de la taxe sera considéré comme déjà inclus dans le prix / montant"
+DocType: Landed Cost Voucher,Landed Cost Voucher,Bon de prix au débarquement
+DocType: Purchase Invoice Item,Landed Cost Voucher Amount,Montant du bon de prix au débarquement
