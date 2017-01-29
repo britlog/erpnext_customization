@@ -63,6 +63,9 @@ apps/erpnext/erpnext/config/learn.py +112,Newsletters,Newsletters
 DocType: Newsletter,Newsletter,Newsletter
 apps/erpnext/erpnext/stock/doctype/item/item.js +51,This Item is a Template and cannot be used in transactions. Item attributes will be copied over into the variants unless 'No Copy' is set,Cet article est un modèle et ne peut être utilisé dans les transactions. Les attributs de l'article seront copiés dans les variantes à moins que 'No Copy' soit coché
 DocType: BOM,Scrap,Rebut
+DocType: Production Order,Scrap Warehouse,Entrepôt Rebuts
+DocType: Purchase Invoice,Rejected Warehouse,Entrepôt Rejetés
+DocType: Production Order,Work-in-Progress Warehouse,Entrepôt Travaux en cours
 ,BOM Browser,Navigateur nomenclatures
 DocType: BOM Operation,Workstation,Station de travail
 DocType: BOM Replace Tool,BOM Replace Tool,Outil de remplacement de nomenclature
@@ -105,3 +108,18 @@ DocType: Purchase Invoice,Taxes and Charges Added,Taxes et charges ajoutées
 DocType: POS Profile,Taxes and Charges,Taxes et charges
 apps/erpnext/erpnext/public/js/controllers/transaction.js +878,Show tax break-up,Afficher rupture par taxe
 DocType: Purchase Invoice,Terms and Conditions1,Termes et conditions
+DocType: Payment Entry,Party Name,Nom de la partie
+DocType: GL Entry,Party,Partie
+apps/erpnext/erpnext/accounts/report/general_ledger/general_ledger.js +75,Group by Voucher,Grouper par bon
+DocType: Quotation Item,Stock Balance,Stock
+DocType: Stock Reconciliation,Stock Reconciliation,Réconciliation des stocks
+DocType: Asset,Item Code,Code de l'article
+apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +35,Opening Qty,Qté ouverture
+apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +47,Opening Value,Valeur ouverture
+apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,In Qty,Qté entrée
+apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +49,In Value,Valeur entrée
+apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,Out Qty,Qté sortie
+apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +51,Out Value,Valeur sortie
+apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,Balance Qty,Différence Qté
+apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +53,Balance Value,Différence Valeur
+,Document Share Report,Rapport des documents partagés
