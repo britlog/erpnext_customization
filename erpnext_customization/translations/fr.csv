@@ -1,6 +1,6 @@
 apps/erpnext_customization/erpnext_customization/config/desktop.py +12,Erpnext Customization,
 apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +9,Get Updates,S'inscrire à la newsletter
-apps/frappe/frappe/email/doctype/newsletter/newsletter.py +136,Thank you for your interest in subscribing to our updates,Merci de votre intérêt en vous abonnant à notre lettre d'informations
+apps/frappe/frappe/email/doctype/newsletter/newsletter.py +136,Thank you for your interest in subscribing to our updates,Merci de votre intérêt en vous abonnant à notre newsletter
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +137,Please verify your email id,Vérifiez s'il vous plaît votre adresse email
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +147,Confirm Your Email,Confirmez votre email
 DocType: Purchase Invoice Item,Is Fixed Asset,Est immobilisé
@@ -27,7 +27,7 @@ DocType: Item Group,Show in Website,Afficher sur le site Web
 apps/erpnext/erpnext/config/accounts.py +80,Masters,Bases
 DocType: Asset,Purchase Invoice,Facture d'achat
 DocType: Payment Request,Payment Request,Demande de paiement
-DocType: Bank Reconciliation Detail,Payment Entry,Enregistrement d'un règlement
+DocType: Bank Reconciliation Detail,Payment Entry,Saisie d'un règlement
 DocType: Depreciation Schedule,Journal Entry,Ecriture comptable
 DocType: Journal Entry,Accounts Receivable,Créances clients
 DocType: Journal Entry,Accounts Payable,Dettes fournisseurs
@@ -46,7 +46,7 @@ DocType: Print Settings,"Always add ""Draft"" Heading for printing draft documen
 DocType: Journal Entry,Write Off Amount,Montant de la perte
 DocType: POS Profile,Write Off Account,Compte créance irrécouvrable
 DocType: POS Profile,Write Off Cost Center,Centre de coûts créance irrécouvrable
-DocType: Journal Entry,Write Off,Annulation de dette
+DocType: Journal Entry,Write Off,Abandon de créances
 DocType: Purchase Invoice,Posting Time,Heure d'enregistrement
 DocType: Sales Invoice,Is Opening Entry,Est une écriture d'entrée
 DocType: Sales Team,Contribution to Net Total,Contribution au Total net
@@ -60,6 +60,7 @@ apps/erpnext/erpnext/config/accounts.py +146,Match Payments with Invoices,Lettra
 DocType: Item,Moving Average,Prix Moyen Pondéré
 DocType: Account,Warehouse,Entrepôt
 apps/erpnext/erpnext/config/learn.py +112,Newsletters,Newsletters
+DocType: Newsletter,Newsletter,Newsletter
 apps/erpnext/erpnext/stock/doctype/item/item.js +51,This Item is a Template and cannot be used in transactions. Item attributes will be copied over into the variants unless 'No Copy' is set,Cet article est un modèle et ne peut être utilisé dans les transactions. Les attributs de l'article seront copiés dans les variantes à moins que 'No Copy' soit coché
 DocType: BOM,Scrap,Rebut
 ,BOM Browser,Navigateur nomenclatures
@@ -88,5 +89,19 @@ apps/erpnext/erpnext/controllers/accounts_controller.py +83,Note: Payment Entry 
 DocType: Purchase Taxes and Charges,Account Head,Intitulé du compte
 DocType: Purchase Taxes and Charges,Is this Tax included in Basic Rate?,Cette taxe est-elle incluse dans le prix de base?
 DocType: Purchase Taxes and Charges,"If checked, the tax amount will be considered as already included in the Print Rate / Print Amount","Si elle est cochée, le montant de la taxe sera considéré comme déjà inclus dans le prix / montant"
-DocType: Landed Cost Voucher,Landed Cost Voucher,Bon de prix au débarquement
-DocType: Purchase Invoice Item,Landed Cost Voucher Amount,Montant du bon de prix au débarquement
+DocType: Landed Cost Voucher,Landed Cost Voucher,Coûts additionnels
+DocType: Purchase Invoice Item,Landed Cost Voucher Amount,Montant des coûts additionnels
+apps/frappe/frappe/desk/doctype/todo/todo_list.js +7,To Do,Choses à faire
+DocType: Purchase Invoice,Is Return,Est un retour
+DocType: Journal Entry Account,Purchase Order,Commande d'achat
+apps/erpnext/erpnext/buying/doctype/purchase_order/purchase_order.js +846,Supplier Quotation,Offre fournisseur
+DocType: Request for Quotation,Request for Quotation,Appel d'offres
+,Stock Ageing,Ancienneté du Stock
+apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.js +743,Purchase Receipt,Bon de réception
+,Stock Ledger,Registre des stocks
+DocType: Stock Entry,Repack,Reconditionnement
+DocType: Stock Entry,Subcontract,Sous-traitance
+DocType: Purchase Invoice,Taxes and Charges Added,Taxes et charges ajoutées
+DocType: POS Profile,Taxes and Charges,Taxes et charges
+apps/erpnext/erpnext/public/js/controllers/transaction.js +878,Show tax break-up,Afficher rupture par taxe
+DocType: Purchase Invoice,Terms and Conditions1,Termes et conditions
