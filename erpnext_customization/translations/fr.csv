@@ -1,11 +1,11 @@
 apps/erpnext_customization/erpnext_customization/config/desktop.py +12,Erpnext Customization,
 apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +9,Get Updates,S'inscrire à la newsletter
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +136,Thank you for your interest in subscribing to our updates,Merci de votre intérêt en vous abonnant à notre newsletter
-apps/frappe/frappe/email/doctype/newsletter/newsletter.py +137,Please verify your email id,Vérifiez s'il vous plaît votre adresse email
-apps/frappe/frappe/email/doctype/newsletter/newsletter.py +147,Confirm Your Email,Confirmez votre email
+apps/frappe/frappe/email/doctype/newsletter/newsletter.py +137,Please verify your email id,Vérifiez s'il vous plaît votre adresse e-mail
+apps/frappe/frappe/email/doctype/newsletter/newsletter.py +147,Confirm Your Email,Confirmez votre e-mail
 DocType: Purchase Invoice Item,Is Fixed Asset,Est immobilisé
 DocType: Report,Disabled,Désactivé
-apps/frappe/frappe/www/login.html +18,Email address,Adresse email
+apps/frappe/frappe/www/login.html +18,Email address,Adresse e-mail
 ,POS,PDV
 apps/erpnext/erpnext/selling/doctype/customer/customer_dashboard.py +10,Pre Sales,Avant-vente
 apps/erpnext/erpnext/public/js/utils.js +116,Total Unpaid: {0},Total impayé: {0}
@@ -27,8 +27,8 @@ DocType: Item Group,Show in Website,Afficher sur le site Web
 apps/erpnext/erpnext/config/accounts.py +80,Masters,Bases
 DocType: Asset,Purchase Invoice,Facture d'achat
 DocType: Payment Request,Payment Request,Demande de paiement
-DocType: Bank Reconciliation Detail,Payment Entry,Saisie d'un règlement
-DocType: Depreciation Schedule,Journal Entry,Ecriture comptable
+DocType: Bank Reconciliation Detail,Payment Entry,Règlement
+DocType: Depreciation Schedule,Journal Entry,Ecriture de journal
 DocType: Journal Entry,Accounts Receivable,Créances clients
 DocType: Journal Entry,Accounts Payable,Dettes fournisseurs
 apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.js +18,General Ledger,Grand livre
@@ -38,9 +38,9 @@ DocType: Workflow State,Barcode,Code-barres
 apps/erpnext/erpnext/templates/print_formats/includes/taxes.html +5,Discount Amount,Remise
 DocType: C-Form Invoice Detail,Grand Total,Total TTC
 DocType: Print Settings,Send Print as PDF,Envoyer les documents en PDF
-DocType: Print Settings,Send Email Print Attachments as PDF (Recommended),Envoi les documents par email en PDF (recommandé)
+DocType: Print Settings,Send Email Print Attachments as PDF (Recommended),Envoi les documents par e-mail en PDF (recommandé)
 DocType: Print Settings,Repeat Header and Footer in PDF,Répétez en-tête et pied de page dans le PDF
-DocType: Print Settings,Send document web view link in email,Envoyer un lien d'affichage web du document dans l'email
+DocType: Print Settings,Send document web view link in email,Envoyer un lien d'affichage web du document dans l'e-mail
 DocType: Print Settings,Compact Item Print,Limiter impression article
 DocType: Print Settings,"Always add ""Draft"" Heading for printing draft documents",Toujours ajouter l'en-tête ""Brouillon"" pour l'impression des brouillons
 DocType: Journal Entry,Write Off Amount,Montant de la perte
@@ -123,3 +123,18 @@ apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +51,Out Value,V
 apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,Balance Qty,Différence Qté
 apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +53,Balance Value,Différence Valeur
 ,Document Share Report,Rapport des documents partagés
+DocType: Purchase Invoice Item,Price List Rate,Prix de la Liste des Prix
+DocType: Purchase Invoice Item,Net Rate,Prix net
+DocType: Sales Invoice Item,Drop Ship,Livraison directe
+DocType: Item,Delivered by Supplier (Drop Ship),Livré par le Fournisseur (livraison directe)
+apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +516,Pick Columns,Choisir les colonnes
+apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +609,Set Sort,Paramétrer le tri
+DocType: Newsletter,Create and Send Newsletters,Créer et envoyer des newsletters
+apps/frappe/frappe/email/doctype/email_group/email_group.js +11,Import Subscribers,Importer des abonnés
+apps/frappe/frappe/email/doctype/email_group/email_group.js +43,New Newsletter,Nouvelle newsletter
+DocType: Item,Is Purchase Item,Est un article acheté
+DocType: Item,Is Sales Item,Est un article vendu
+DocType: Item,Has Variants,A des Variantes
+DocType: Item Tax,Tax Rate,Taux d'imposition
+DocType: Customer,Individual,Particulier
+apps/frappe/frappe/templates/generators/web_form.html +52,Please sign-up or login to begin,Inscrivez-vous ou connectez-vous s'il vous plaît pour commencer
