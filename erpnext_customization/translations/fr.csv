@@ -138,3 +138,21 @@ DocType: Item,Has Variants,A des Variantes
 DocType: Item Tax,Tax Rate,Taux d'imposition
 DocType: Customer,Individual,Particulier
 apps/frappe/frappe/templates/generators/web_form.html +52,Please sign-up or login to begin,Inscrivez-vous ou connectez-vous s'il vous plaît pour commencer
+DocType: Supplier Quotation,Opportunity,Opportunité
+DocType: Opportunity,Mins to first response,Mins avant la première réponse
+DocType: Opportunity,Opportunity From,Opportunité depuis
+apps/erpnext/erpnext/buying/doctype/supplier_quotation/supplier_quotation_list.js +7,Lost,Perdu
+DocType: Opportunity,Contact Info,Coordonnées
+DocType: Opportunity,Opportunity Date,Date de l'opportunité
+DocType: Opportunity,Enter name of campaign if source of enquiry is campaign,Entrez le nom de la campagne si la source de la demande est une campagne
+DocType: Opportunity,Next Contact,Prochain contact
+DocType: Lead,Next Contact By,Prochain contact par
+DocType: Opportunity,To Discuss,A discuter
+DocType: Note,Note,Note
+apps/frappe/frappe/desk/doctype/note/note_list.js +3,Notes,Notes
+DocType: Note Seen By,Note Seen By,Note vue par
+,Minutes to First Response for Opportunity,Minutes avant la première réponse à une opportunité
+apps/erpnext/erpnext/config/crm.py +6,Sales Pipeline,Pipeline des ventes
+apps/erpnext/erpnext/config/learn.py +107,Lead to Quotation,Du prospect au devis
+,Quotation Trends,Evolution des devis
+,Sales Order Trends,Evolution des commandes
