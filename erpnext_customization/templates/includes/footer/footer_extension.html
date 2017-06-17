@@ -16,16 +16,16 @@ frappe.ready(function() {
 
 		if($("#footer-subscribe-email").val()) {
 			$("#footer-subscribe-email").attr('disabled', true);
-			$("#footer-subscribe-button").html("Sending...")
+			$("#footer-subscribe-button").html("{{ _("Sending") }}")
 				.attr("disabled", true);
 			erpnext.subscribe_to_newsletter({
 				email: $("#footer-subscribe-email").val(),
 				callback: function(r) {
 					if(!r.exc) {
-						$("#footer-subscribe-button").html(__("Added"))
+						$("#footer-subscribe-button").html("{{ _("Added") }}")
 							.attr("disabled", true);
 					} else {
-						$("#footer-subscribe-button").html(__("Error: Not a valid id?"))
+						$("#footer-subscribe-button").html("{{ _("Error: Not a valid id?") }}")
 							.addClass("btn-danger").attr("disabled", false);
 						$("#footer-subscribe-email").val("").attr('disabled', false);
 					}
@@ -33,7 +33,7 @@ frappe.ready(function() {
 			});
 		}
 		else
-			frappe.msgprint(frappe._("Please enter email address"))
+			frappe.msgprint("{{ _("Please enter valid email address") }}")
 	});
 });
 </script>

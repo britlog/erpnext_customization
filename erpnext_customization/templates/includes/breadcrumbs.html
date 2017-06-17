@@ -1,0 +1,8 @@
+{% if parents and parents|length > 0 %}
+<ul class="breadcrumb">
+	{% for parent in parents %}
+		<li><a href="{{ parent.name | abs_url }}">{{ parent.title or parent.label or "" }}</a></li>
+	{% endfor %}
+	<li class="active">{{ title or "" }}</li>
+</ul>
+{% endif %}

@@ -1,12 +1,12 @@
 apps/erpnext_customization/erpnext_customization/config/desktop.py +12,Erpnext Customization,
 apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +9,Get Updates,S'inscrire à la newsletter
-apps/frappe/frappe/email/doctype/newsletter/newsletter.py +136,Thank you for your interest in subscribing to our updates,Merci de votre intérêt en vous abonnant à notre newsletter
+apps/frappe/frappe/email/doctype/newsletter/newsletter.py +136,Thank you for your interest in subscribing to our updates,Merci de l’intérêt que vous nous portez en vous abonnant à notre newsletter
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +137,Please verify your email id,Vérifiez s'il vous plaît votre adresse e-mail
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +147,Confirm Your Email,Confirmez votre e-mail
 DocType: Purchase Invoice Item,Is Fixed Asset,Est immobilisé
 DocType: Report,Disabled,Désactivé
 apps/frappe/frappe/www/login.html +18,Email address,Adresse e-mail
-,POS,PDV
+,POS,Caisse
 apps/erpnext/erpnext/selling/doctype/customer/customer_dashboard.py +10,Pre Sales,Avant-vente
 apps/erpnext/erpnext/public/js/utils.js +116,Total Unpaid: {0},Total impayé: {0}
 DocType: Purchase Invoice,Print Language,Langue d'impression
@@ -157,3 +157,15 @@ apps/erpnext/erpnext/config/learn.py +107,Lead to Quotation,Du prospect au devis
 ,Quotation Trends,Evolution des devis
 ,Sales Order Trends,Evolution des commandes
 apps/frappe/frappe/templates/includes/comments/comments.html +39,Your email address,Votre adresse e-mail
+apps/frappe/frappe/www/login.html +30,Sign In,Se Connecter
+apps/frappe/frappe/www/login.html +89,Sign Up,S'inscrire
+apps/frappe/frappe/public/js/frappe/form/toolbar.js +189,New {0} (Ctrl+B),Créer {0} (Ctrl + B)
+apps/frappe/frappe/core/doctype/communication/communication_list.js +26,New,Créer
+apps/frappe/frappe/public/js/frappe/views/treeview.js +212,New {0},Créer {0}
+apps/frappe/frappe/public/js/frappe/form/multi_select_dialog.js +58,Make a new,Créer
+apps/frappe/frappe/public/js/frappe/form/control.js +1407,Create a new {0},Créer {0}
+apps/frappe/frappe/public/js/frappe/views/treeview.js +223,Create New,Créer
+apps/frappe/frappe/public/js/frappe/form/link_selector.js +106,Make a new {0},Créer {0}
+apps/erpnext/erpnext/controllers/recurring_document.py +135,New {0}: #{1},Créer {0}: # {1}
+apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +34,Please enter valid email address,Entrez s'il vous plaît une adresse e-mail valide
+apps/frappe/frappe/email/doctype/email_group/email_group.py +87,{0} is not a valid Email Address,{0} n’est pas une adresse e-mail valide
