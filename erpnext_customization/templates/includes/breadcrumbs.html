@@ -1,7 +1,17 @@
-{% if parents and parents|length > 0 %}
+{% if parent_groups and parent_groups|length > 0 %}
 <ul class="breadcrumb">
-	{% for parent in parents %}
-		<li><a href="{{ parent.name | abs_url }}">{{ parent.title or parent.label or "" }}</a></li>
+	{#
+	<!--<li>-->
+		<!--<span class="fa fa-angle-left"></span>-->
+		<!--<a href="{{ url_prefix }}{{ parents[-1].route | abs_url }}">-->
+		<!--{{ _(parents[-1].title) or _(parents[-1].label) or "" }}</a>-->
+	<!--</li>-->
+	#}
+	<li><a href="/">{{ _("Home") }}</a></li>
+	{% for parent in parent_groups %}
+	{% if parent != parent_groups[-1] %}
+		<li><a href="{{ parent.route | abs_url }}">{{ parent.name or parent.label or "" }}</a></li>
+	{% endif %}
 	{% endfor %}
 	<li class="active">{{ title or "" }}</li>
 </ul>
