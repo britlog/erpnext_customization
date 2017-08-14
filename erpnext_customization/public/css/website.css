@@ -23,3 +23,6 @@
   margin-top: -10px;
   margin-left: -10px;
 }
+.page-content h1:first-child {
+  margin-top: 20px;
+}

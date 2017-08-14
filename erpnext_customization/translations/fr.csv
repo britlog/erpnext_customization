@@ -28,7 +28,7 @@ apps/erpnext/erpnext/config/accounts.py +80,Masters,Bases
 DocType: Asset,Purchase Invoice,Facture d'achat
 DocType: Payment Request,Payment Request,Demande de paiement
 DocType: Bank Reconciliation Detail,Payment Entry,Règlement
-DocType: Depreciation Schedule,Journal Entry,Ecriture de journal
+DocType: Depreciation Schedule,Journal Entry,Ecriture comptable
 DocType: Journal Entry,Accounts Receivable,Créances clients
 DocType: Journal Entry,Accounts Payable,Dettes fournisseurs
 apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.js +18,General Ledger,Grand livre
@@ -137,7 +137,7 @@ DocType: Item,Is Sales Item,Est un article vendu
 DocType: Item,Has Variants,A des Variantes
 DocType: Item Tax,Tax Rate,Taux d'imposition
 DocType: Customer,Individual,Particulier
-apps/frappe/frappe/templates/generators/web_form.html +52,Please sign-up or login to begin,Connectez-vous svp pour commencer
+apps/frappe/frappe/templates/generators/web_form.html +52,Please sign-up or login to begin,Connectez-vous s'il vous plaît pour commencer
 DocType: Supplier Quotation,Opportunity,Opportunité
 DocType: Opportunity,Mins to first response,Mins avant la première réponse
 DocType: Opportunity,Opportunity From,Opportunité depuis
@@ -171,7 +171,8 @@ apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +34,Please 
 apps/frappe/frappe/email/doctype/email_group/email_group.py +87,{0} is not a valid Email Address,{0} n’est pas une adresse e-mail valide
 apps/erpnext/erpnext/templates/includes/cart/cart_dropdown.html +18,Checkout,Valider la commande
 TODO,per,par
-TODO,Not in stock,Rupture
+TODO,Not in stock,Non disponible
 TODO,In stock,En stock
 TODO,Nothing more to show.,Rien d'autre à afficher.
 TODO,No products found.,Aucun produit trouvé.
+apps/frappe/frappe/website/doctype/blog_post/blog_post.py +98,Posts filed under {0},Messages déposés sous {0}
