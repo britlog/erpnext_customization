@@ -3,60 +3,60 @@ apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +9,Get Upda
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +136,Thank you for your interest in subscribing to our updates,Merci de l’intérêt que vous nous portez en vous abonnant à notre newsletter
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +137,Please verify your email id,Vérifiez s'il vous plaît votre adresse e-mail
 apps/frappe/frappe/email/doctype/newsletter/newsletter.py +147,Confirm Your Email,Confirmez votre e-mail
-DocType: Purchase Invoice Item,Is Fixed Asset,Est immobilisé
+DocType: Purchase Invoice Item,Is Fixed Asset,Est Immobilisé
 DocType: Report,Disabled,Désactivé
 apps/frappe/frappe/www/login.html +18,Email address,Adresse e-mail
 ,POS,Caisse
 apps/erpnext/erpnext/selling/doctype/customer/customer_dashboard.py +10,Pre Sales,Avant-vente
 apps/erpnext/erpnext/public/js/utils.js +116,Total Unpaid: {0},Total impayé: {0}
-DocType: Purchase Invoice,Print Language,Langue d'impression
-DocType: Supplier,Credit Days Based On,Jours de crédit basés sur
-DocType: Pricing Rule,Sales Partner,Partenaire commercial
-DocType: Sales Invoice,Sales Team,Équipe de vente
-DocType: Sales Invoice,Time Sheet List,Liste des temps
-DocType: Purchase Invoice,Additional Discount,Remise supplémentaire
-DocType: Sales Invoice,Get Advances Received,Voir acomptes reçus
+DocType: Purchase Invoice,Print Language,Langue d'Impression
+DocType: Supplier,Credit Days Based On,Jours de Crédit Basés sur
+DocType: Pricing Rule,Sales Partner,Partenaire Commercial
+DocType: Sales Invoice,Sales Team,Équipe de Vente
+DocType: Sales Invoice,Time Sheet List,Liste des Temps
+DocType: Purchase Invoice,Additional Discount,Remise Supplémentaire
+DocType: Sales Invoice,Get Advances Received,Voir Acomptes Reçus
 DocType: Item,Allow over delivery or receipt upto this percent,Autoriser livraison ou réception excédentaire jusqu'à ce pourcentage
-DocType: Item,Default Material Request Type,Type de demande matériel par défaut
-DocType: Item,Material Issue,Problème matériel
+DocType: Item,Default Material Request Type,Type de Demande Matériel par défaut
+DocType: Item,Material Issue,Problème Matériel
 DocType: Item,Will also apply for variants unless overrridden,S'appliquera également pour les variantes sauf surchargées
 DocType: Item,Will also apply to variants,S'appliquera également aux variantes
 DocType: Item,Will also apply for variants,S'appliquera également aux variantes
-DocType: Item,Supply Raw Materials for Purchase,Fournir les matières premières pour l'achat
-DocType: Item Group,Show in Website,Afficher sur le site Web
+DocType: Item,Supply Raw Materials for Purchase,Fournir les Matières Premières pour l'Achat
+DocType: Item Group,Show in Website,Afficher sur le Site Web
 apps/erpnext/erpnext/config/accounts.py +80,Masters,Bases
-DocType: Asset,Purchase Invoice,Facture d'achat
-DocType: Payment Request,Payment Request,Demande de paiement
+DocType: Asset,Purchase Invoice,Facture d'Achat
+DocType: Payment Request,Payment Request,Demande de Paiement
 DocType: Bank Reconciliation Detail,Payment Entry,Règlement
-DocType: Depreciation Schedule,Journal Entry,Ecriture comptable
-DocType: Journal Entry,Accounts Receivable,Créances clients
-DocType: Journal Entry,Accounts Payable,Dettes fournisseurs
-apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.js +18,General Ledger,Grand livre
+DocType: Depreciation Schedule,Journal Entry,Ecriture Comptable
+DocType: Journal Entry,Accounts Receivable,Créances Clients
+DocType: Journal Entry,Accounts Payable,Dettes Fournisseurs
+apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.js +18,General Ledger,Grand Livre
 DocType: Letter Head,Letter Head,Entête
-DocType: Journal Entry,Print Heading,Intitulé d'impression
+DocType: Journal Entry,Print Heading,Intitulé d'Impression
 DocType: Workflow State,Barcode,Code-barres
 apps/erpnext/erpnext/templates/print_formats/includes/taxes.html +5,Discount Amount,Remise
 DocType: C-Form Invoice Detail,Grand Total,Total TTC
-DocType: Print Settings,Send Print as PDF,Envoyer les documents en PDF
-DocType: Print Settings,Send Email Print Attachments as PDF (Recommended),Envoi les documents par e-mail en PDF (recommandé)
-DocType: Print Settings,Repeat Header and Footer in PDF,Répétez entête et pied de page dans le PDF
+DocType: Print Settings,Send Print as PDF,Envoyer les Documents en PDF
+DocType: Print Settings,Send Email Print Attachments as PDF (Recommended),Envoi les Documents par e-mail en PDF (recommandé)
+DocType: Print Settings,Repeat Header and Footer in PDF,Répétez Entête et Pied de Page dans le PDF
 DocType: Print Settings,Send document web view link in email,Envoyer un lien d'affichage web du document dans l'e-mail
-DocType: Print Settings,Compact Item Print,Limiter impression article
+DocType: Print Settings,Compact Item Print,Limiter Impression Article
 DocType: Print Settings,"Always add ""Draft"" Heading for printing draft documents",Toujours ajouter l'entête ""Brouillon"" pour l'impression des brouillons
-DocType: Journal Entry,Write Off Amount,Montant de la perte
-DocType: POS Profile,Write Off Account,Compte créance irrécouvrable
-DocType: POS Profile,Write Off Cost Center,Centre de coûts créance irrécouvrable
-DocType: Journal Entry,Write Off,Abandon de créances
-DocType: Purchase Invoice,Posting Time,Heure d'enregistrement
-DocType: Sales Invoice,Is Opening Entry,Est une écriture d'entrée
-DocType: Sales Team,Contribution to Net Total,Contribution au Total net
+DocType: Journal Entry,Write Off Amount,Montant de la Perte
+DocType: POS Profile,Write Off Account,Compte Créance Irrécouvrable
+DocType: POS Profile,Write Off Cost Center,Centre de Coûts Créance Irrécouvrable
+DocType: Journal Entry,Write Off,Abandon de Créances
+DocType: Purchase Invoice,Posting Time,Heure d'Enregistrement
+DocType: Sales Invoice,Is Opening Entry,Est une Ecriture d'Entrée
+DocType: Sales Team,Contribution to Net Total,Contribution au Total Net
 DocType: Purchase Invoice,Terms,Termes
-apps/erpnext/erpnext/config/accounts.py +107,Accounting Statements,Etats comptables
-apps/erpnext/erpnext/config/accounts.py +136,Banking and Payments,Opérations bancaires et paiements
-apps/erpnext/erpnext/config/accounts.py +140,Update Bank Transaction Dates,Mettre à jour les dates de transaction
-apps/erpnext/erpnext/config/accounts.py +146,Match Payments with Invoices,Lettrage comptable
-,Bank Reconciliation Statement,État de rapprochement bancaire
-,Bank Clearance Summary,Synthèse de la compensation bancaire
+apps/erpnext/erpnext/config/accounts.py +107,Accounting Statements,Etats Comptables
+apps/erpnext/erpnext/config/accounts.py +136,Banking and Payments,Opérations Bancaires et Paiements
+apps/erpnext/erpnext/config/accounts.py +140,Update Bank Transaction Dates,Mettre à Jour les Dates de Transaction
+apps/erpnext/erpnext/config/accounts.py +146,Match Payments with Invoices,Lettrage Comptable
+,Bank Reconciliation Statement,État de Rapprochement Bancaire
+,Bank Clearance Summary,Synthèse de la Compensation Bancaire
 DocType: Item,Moving Average,Prix Moyen Pondéré
 DocType: Account,Warehouse,Entrepôt
 apps/erpnext/erpnext/config/learn.py +112,Newsletters,Newsletters
@@ -65,97 +65,97 @@ apps/erpnext/erpnext/stock/doctype/item/item.js +51,This Item is a Template and 
 DocType: BOM,Scrap,Rebut
 DocType: Production Order,Scrap Warehouse,Entrepôt Rebuts
 DocType: Purchase Invoice,Rejected Warehouse,Entrepôt Rejetés
-DocType: Production Order,Work-in-Progress Warehouse,Entrepôt Travaux en cours
-,BOM Browser,Navigateur nomenclatures
-DocType: BOM Operation,Workstation,Station de travail
-DocType: BOM Replace Tool,BOM Replace Tool,Outil de remplacement de nomenclature
+DocType: Production Order,Work-in-Progress Warehouse,Entrepôt Travaux en Cours
+,BOM Browser,Navigateur Nomenclatures
+DocType: BOM Operation,Workstation,Station de Travail
+DocType: BOM Replace Tool,BOM Replace Tool,Outil de Remplacement de Nomenclature
 DocType: Purchase Invoice Item,BOM,Nomenclature
-DocType: BOM,Rate Of Materials Based On,Prix des matériaux basé sur
-DocType: Workstation,Operating Costs,Coûts opérationnels
-DocType: BOM,Manage cost of operations,Gérer le coût des opérations
-DocType: Account,Income Account,Compte de produits
-DocType: Company,Default Income Account,Compte de produits par défaut
-DocType: Sales Invoice,Against Income Account,Sur le compte de produits
-DocType: Account,Expense Account,Compte de charges
-DocType: Item Group,Default Expense Account,Compte de charges par défaut
-DocType: Purchase Invoice,Against Expense Account,Sur le compte de charges
+DocType: BOM,Rate Of Materials Based On,Prix des Matériaux Basé sur
+DocType: Workstation,Operating Costs,Coûts Opérationnels
+DocType: BOM,Manage cost of operations,Gérer le Coût des Opérations
+DocType: Account,Income Account,Compte de Produits
+DocType: Company,Default Income Account,Compte de Produits par Défaut
+DocType: Sales Invoice,Against Income Account,Sur le Compte de Produits
+DocType: Account,Expense Account,Compte de Charges
+DocType: Item Group,Default Expense Account,Compte de Charges par Défaut
+DocType: Purchase Invoice,Against Expense Account,Sur le Compte de Charges
 DocType: DocType,DocType,DocType
-apps/frappe/frappe/config/setup.py +263,Custom Tags,Balises personnalisées
+apps/frappe/frappe/config/setup.py +263,Custom Tags,Balises Personnalisées
 DocType: Workflow State,Primary,Principal
-apps/frappe/frappe/public/js/frappe/views/communication.js +74,Attach Document Print,Joindre l'impression du document
-apps/frappe/frappe/public/js/frappe/views/communication.js +66,Send me a copy,M'envoyer une copie
-apps/frappe/frappe/public/js/frappe/views/communication.js +81,Select Attachments,Sélectionnez les pièces jointes
+apps/frappe/frappe/public/js/frappe/views/communication.js +74,Attach Document Print,Joindre l'Impression du Document
+apps/frappe/frappe/public/js/frappe/views/communication.js +66,Send me a copy,M'envoyer une Copie
+apps/frappe/frappe/public/js/frappe/views/communication.js +81,Select Attachments,Sélectionnez les Pièces Jointes
 DocType: Workflow State,Print,Imprimer
-apps/frappe/frappe/print/doctype/print_format/print_format.js +31,Make Default,Définir par défaut
-DocType: User,Send Notifications for Transactions I Follow,Envoyer des notifications pour les transactions que je suis
+apps/frappe/frappe/print/doctype/print_format/print_format.js +31,Make Default,Définir par Défaut
+DocType: User,Send Notifications for Transactions I Follow,Envoyer des Notifications pour les Transactions que je Suis
 apps/erpnext/erpnext/controllers/accounts_controller.py +83,Note: Payment Entry will not be created since 'Cash or Bank Account' was not specified,Remarque: le règlement ne sera pas enregistré tant que le compte 'Cash ou compte bancaire' n'aura pas été spécifié
-DocType: Purchase Taxes and Charges,Account Head,Intitulé du compte
-DocType: Purchase Taxes and Charges,Is this Tax included in Basic Rate?,Cette taxe est-elle incluse dans le prix de base?
+DocType: Purchase Taxes and Charges,Account Head,Intitulé du Compte
+DocType: Purchase Taxes and Charges,Is this Tax included in Basic Rate?,Cette Taxe est-elle Incluse dans le Prix de Base?
 DocType: Purchase Taxes and Charges,"If checked, the tax amount will be considered as already included in the Print Rate / Print Amount","Si elle est cochée, le montant de la taxe sera considéré comme déjà inclus dans le prix / montant"
-DocType: Landed Cost Voucher,Landed Cost Voucher,Coûts additionnels
-DocType: Purchase Invoice Item,Landed Cost Voucher Amount,Montant des coûts additionnels
-apps/frappe/frappe/desk/doctype/todo/todo_list.js +7,To Do,Choses à faire
-DocType: Purchase Invoice,Is Return,Est un retour
-DocType: Journal Entry Account,Purchase Order,Commande d'achat
-apps/erpnext/erpnext/buying/doctype/purchase_order/purchase_order.js +846,Supplier Quotation,Offre fournisseur
-DocType: Request for Quotation,Request for Quotation,Appel d'offres
+DocType: Landed Cost Voucher,Landed Cost Voucher,Coûts Additionnels
+DocType: Purchase Invoice Item,Landed Cost Voucher Amount,Montant des Coûts Additionnels
+apps/frappe/frappe/desk/doctype/todo/todo_list.js +7,To Do,To Do
+DocType: Purchase Invoice,Is Return,Est un Retour
+DocType: Journal Entry Account,Purchase Order,Commande d'Achat
+apps/erpnext/erpnext/buying/doctype/purchase_order/purchase_order.js +846,Supplier Quotation,Offre Fournisseur
+DocType: Request for Quotation,Request for Quotation,Appel d'Offres
 ,Stock Ageing,Ancienneté du Stock
-apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.js +743,Purchase Receipt,Bon de réception
-,Stock Ledger,Registre des stocks
+apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.js +743,Purchase Receipt,Bon de Réception
+,Stock Ledger,Registre des Stocks
 DocType: Stock Entry,Repack,Reconditionnement
 DocType: Stock Entry,Subcontract,Sous-traitance
-DocType: Purchase Invoice,Taxes and Charges Added,Taxes et charges ajoutées
-DocType: POS Profile,Taxes and Charges,Taxes et charges
+DocType: Purchase Invoice,Taxes and Charges Added,Taxes et Charges Ajoutées
+DocType: POS Profile,Taxes and Charges,Taxes et Charges
 apps/erpnext/erpnext/public/js/controllers/transaction.js +878,Show tax break-up,Afficher rupture par taxe
-DocType: Purchase Invoice,Terms and Conditions1,Termes et conditions
-DocType: Payment Entry,Party Name,Nom de la partie
+DocType: Purchase Invoice,Terms and Conditions1,Termes et Conditions
+DocType: Payment Entry,Party Name,Nom de la Partie
 DocType: GL Entry,Party,Partie
-apps/erpnext/erpnext/accounts/report/general_ledger/general_ledger.js +75,Group by Voucher,Grouper par bon
+apps/erpnext/erpnext/accounts/report/general_ledger/general_ledger.js +75,Group by Voucher,Grouper par Bon
 DocType: Quotation Item,Stock Balance,Stock
-DocType: Stock Reconciliation,Stock Reconciliation,Réconciliation des stocks
-DocType: Asset,Item Code,Code de l'article
-apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +35,Opening Qty,Qté ouverture
-apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +47,Opening Value,Valeur ouverture
-apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,In Qty,Qté entrée
-apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +49,In Value,Valeur entrée
-apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,Out Qty,Qté sortie
-apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +51,Out Value,Valeur sortie
+DocType: Stock Reconciliation,Stock Reconciliation,Réconciliation des Stocks
+DocType: Asset,Item Code,Code de l'Article
+apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +35,Opening Qty,Qté Ouverture
+apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +47,Opening Value,Valeur Ouverture
+apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,In Qty,Qté Entrée
+apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +49,In Value,Valeur Entrée
+apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,Out Qty,Qté Sortie
+apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +51,Out Value,Valeur Sortie
 apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,Balance Qty,Différence Qté
 apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +53,Balance Value,Différence Valeur
-,Document Share Report,Rapport des documents partagés
+,Document Share Report,Rapport des Documents Partagés
 DocType: Purchase Invoice Item,Price List Rate,Prix de la Liste des Prix
-DocType: Purchase Invoice Item,Net Rate,Prix net
-DocType: Sales Invoice Item,Drop Ship,Livraison directe
-DocType: Item,Delivered by Supplier (Drop Ship),Livré par le Fournisseur (livraison directe)
-apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +516,Pick Columns,Choisir les colonnes
-apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +609,Set Sort,Paramétrer le tri
-DocType: Newsletter,Create and Send Newsletters,Créer et envoyer des newsletters
-apps/frappe/frappe/email/doctype/email_group/email_group.js +11,Import Subscribers,Importer des abonnés
-apps/frappe/frappe/email/doctype/email_group/email_group.js +43,New Newsletter,Nouvelle newsletter
-DocType: Item,Is Purchase Item,Est un article acheté
-DocType: Item,Is Sales Item,Est un article vendu
+DocType: Purchase Invoice Item,Net Rate,Prix Net
+DocType: Sales Invoice Item,Drop Ship,Livraison Directe
+DocType: Item,Delivered by Supplier (Drop Ship),Livré par le Fournisseur (Livraison Directe)
+apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +516,Pick Columns,Choisir les Colonnes
+apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +609,Set Sort,Paramétrer le Tri
+DocType: Newsletter,Create and Send Newsletters,Créer et Envoyer des Newsletters
+apps/frappe/frappe/email/doctype/email_group/email_group.js +11,Import Subscribers,Importer des Abonnés
+apps/frappe/frappe/email/doctype/email_group/email_group.js +43,New Newsletter,Nouvelle Newsletter
+DocType: Item,Is Purchase Item,Est un Article Acheté
+DocType: Item,Is Sales Item,Est un Article Vendu
 DocType: Item,Has Variants,A des Variantes
-DocType: Item Tax,Tax Rate,Taux d'imposition
+DocType: Item Tax,Tax Rate,Taux d'Imposition
 DocType: Customer,Individual,Particulier
 apps/frappe/frappe/templates/generators/web_form.html +52,Please sign-up or login to begin,Connectez-vous s'il vous plaît pour commencer
 DocType: Supplier Quotation,Opportunity,Opportunité
 DocType: Opportunity,Mins to first response,Mins avant la première réponse
-DocType: Opportunity,Opportunity From,Opportunité depuis
+DocType: Opportunity,Opportunity From,Opportunité Depuis
 apps/erpnext/erpnext/buying/doctype/supplier_quotation/supplier_quotation_list.js +7,Lost,Perdu
 DocType: Opportunity,Contact Info,Coordonnées
-DocType: Opportunity,Opportunity Date,Date de l'opportunité
+DocType: Opportunity,Opportunity Date,Date de l'Opportunité
 DocType: Opportunity,Enter name of campaign if source of enquiry is campaign,Entrez le nom de la campagne si la source de la demande est une campagne
-DocType: Opportunity,Next Contact,Prochain contact
-DocType: Lead,Next Contact By,Prochain contact par
-DocType: Opportunity,To Discuss,A discuter
+DocType: Opportunity,Next Contact,Prochain Contact
+DocType: Lead,Next Contact By,Prochain Contact Par
+DocType: Opportunity,To Discuss,A Discuter
 DocType: Note,Note,Note
 apps/frappe/frappe/desk/doctype/note/note_list.js +3,Notes,Notes
-DocType: Note Seen By,Note Seen By,Note vue par
-,Minutes to First Response for Opportunity,Minutes avant la première réponse à une opportunité
-apps/erpnext/erpnext/config/crm.py +6,Sales Pipeline,Pipeline des ventes
-apps/erpnext/erpnext/config/learn.py +107,Lead to Quotation,Du prospect au devis
-,Quotation Trends,Evolution des devis
-,Sales Order Trends,Evolution des commandes
+DocType: Note Seen By,Note Seen By,Note Vue Par
+,Minutes to First Response for Opportunity,Minutes Avant la Première Réponse à une Opportunité
+apps/erpnext/erpnext/config/crm.py +6,Sales Pipeline,Pipeline des Ventes
+apps/erpnext/erpnext/config/learn.py +107,Lead to Quotation,Du Prospect au Devis
+,Quotation Trends,Evolution des Devis
+,Sales Order Trends,Evolution des Commandes
 apps/frappe/frappe/templates/includes/comments/comments.html +39,Your email address,Votre adresse e-mail
 apps/frappe/frappe/www/login.html +30,Sign In,Se Connecter
 apps/frappe/frappe/www/login.html +89,Sign Up,S'inscrire
@@ -169,10 +169,13 @@ apps/frappe/frappe/public/js/frappe/form/link_selector.js +106,Make a new {0},Cr
 apps/erpnext/erpnext/controllers/recurring_document.py +135,New {0}: #{1},Créer {0}: # {1}
 apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +34,Please enter valid email address,Entrez s'il vous plaît une adresse e-mail valide
 apps/frappe/frappe/email/doctype/email_group/email_group.py +87,{0} is not a valid Email Address,{0} n’est pas une adresse e-mail valide
-apps/erpnext/erpnext/templates/includes/cart/cart_dropdown.html +18,Checkout,Valider la commande
+apps/erpnext/erpnext/templates/includes/cart/cart_dropdown.html +18,Checkout,Valider la Commande
 TODO,per,par
 TODO,Not in stock,Non disponible
 TODO,In stock,En stock
 TODO,Nothing more to show.,Rien d'autre à afficher.
 TODO,No products found.,Aucun produit trouvé.
 apps/frappe/frappe/website/doctype/blog_post/blog_post.py +98,Posts filed under {0},Messages déposés sous {0}
+apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.html +77,Printed On,Imprimé Le
+DocType: Workflow State,Comment,Commentaire
+DocType: Contact,Salutation,Civilité
