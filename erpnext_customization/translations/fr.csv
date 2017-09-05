@@ -179,3 +179,4 @@ apps/frappe/frappe/website/doctype/blog_post/blog_post.py +98,Posts filed under 
 apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.html +77,Printed On,Imprimé Le
 DocType: Workflow State,Comment,Commentaire
 DocType: Contact,Salutation,Civilité
+TODO,Valid Till,Valide jusqu'au
