@@ -95,6 +95,10 @@ web_include_css = "/assets/erpnext_customization/css/website.css"
 #	}
 # }
 
+doctype_js = {
+	"Fiscal Year": ["erpnext_customization/custom_scripts/fiscal_year.js"]
+}
+
 # Scheduled Tasks
 # ---------------
 
