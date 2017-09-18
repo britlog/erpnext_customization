@@ -41,9 +41,9 @@ def get_result(company,fiscal_year):
 
 	gl_entries = frappe.db.sql("""
 		select
+			gl.creation,
 			gl.posting_date,
 			gl.account,
-			gl.creation,
 			gl.debit,
 			gl.credit,
 			gl.debit_in_account_currency as debit_cur,
@@ -53,7 +53,6 @@ def get_result(company,fiscal_year):
 			gl.against_voucher_type,
 			gl.against_voucher,
 			gl.account_currency,
-			gl.against,
 			gl.party_type,
 			gl.party,
 			cust.customer_name,
@@ -70,7 +69,7 @@ def get_result(company,fiscal_year):
 			left join `tabJournal Entry` jv on gl.against_voucher = jv.name
 			left join `tabPayment Entry` pe on gl.against_voucher = pe.name
 		where gl.company=%(company)s and gl.fiscal_year=%(fiscal_year)s
-		order by gl.posting_date, gl.name""",
+		order by gl.creation, gl.name""",
 				{"company": company, "fiscal_year": fiscal_year}, as_dict=True)
 
 	result = get_result_as_list(gl_entries, company)
@@ -80,6 +79,12 @@ def get_result(company,fiscal_year):
 def get_result_as_list(data, company):
 	result = []
 	company_currency = frappe.db.get_value("Company", company, "default_currency")
+
+	# Journal dict
+	journal_dict = {}
+	journal_list = frappe.db.get_all("Mode of Payment Account",  filters=[["company","=",company], ["journal_code","!=",""]], fields=['journal_code','journal_label'])
+	for i, elt in enumerate(journal_list):
+		journal_dict[elt["journal_code"]] = elt["journal_label"]
 
 	row = ["JournalCode", "JournalLib", "EcritureNum", "EcritureDate", "CompteNum", "CompteLib",
 		   "CompAuxNum", "CompAuxLib", "PieceRef", "PieceDate", "EcritureLib",
@@ -99,7 +104,10 @@ def get_result_as_list(data, company):
 		elif d.get("voucher_type") == "Purchase Invoice":
 			journal_lib = "Achats"
 		elif d.get("voucher_type") == "Payment Entry":
-			journal_lib = "Tresorerie"
+			if journal_code in journal_dict.keys():
+				journal_lib = journal_dict[journal_code]
+			else:
+				journal_lib = "Tresorerie"
 		else:
 			journal_lib = "Operations Diverses"
 
@@ -107,7 +115,7 @@ def get_result_as_list(data, company):
 		ecriture_num = d.get("voucher_no").split("-")[-1]
 
 		# 4. La date de comptabilisation de l'écriture comptable
-		ecriture_date = format_datetime(d.get("creation"), "yyyyMMdd")
+		ecriture_date = format_datetime(d.get("posting_date"), "yyyyMMdd")
 
 		# 5. Le numéro de compte, dont les trois premiers caractères doivent correspondre à
 		# des chiffres respectant les normes du plan comptable français
@@ -148,7 +156,7 @@ def get_result_as_list(data, company):
 			piece_ref = d.get("against_voucher")
 			piece_date = format_datetime(d.get("pe_posting_date"), "yyyyMMdd")
 
-		if not piece_ref:
+		else:
 			piece_ref = d.get("voucher_no")
 			piece_date = ecriture_date
 
@@ -168,7 +176,7 @@ def get_result_as_list(data, company):
 		date_let = ""
 
 		# 16. La date de validation de l'écriture comptable
-		valid_date = format_datetime(d.get("posting_date"), "yyyyMMdd")
+		valid_date = format_datetime(d.get("creation"), "yyyyMMdd")
 
 		# 17. Le montant en devise (à blanc si non utilisé)
 		# 18. L'identifiant de la devise (à blanc si non utilisé)
