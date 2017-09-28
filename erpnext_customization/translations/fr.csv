@@ -182,3 +182,4 @@ DocType: Contact,Salutation,Civilité
 TODO,Valid Till,Valide jusqu'au
 TODO,Journal Code,Code Journal
 TODO,Journal Label,Libellé Journal
+DocType: Sales Invoice,Tax ID,Numéro de TVA Intracommunautaire

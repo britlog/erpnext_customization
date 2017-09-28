@@ -108,6 +108,8 @@ def get_result_as_list(data, company):
 				journal_lib = journal_dict[journal_code]
 			else:
 				journal_lib = "Tresorerie"
+		elif d.get("voucher_type") == "Period Closing Voucher":
+			journal_lib = "A ouveau"
 		else:
 			journal_lib = "Operations Diverses"
 

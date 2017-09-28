@@ -94,7 +94,11 @@ web_include_css = "/assets/erpnext_customization/css/website.css"
 # 		"on_trash": "method"
 #	}
 # }
-
+doc_events = {
+	"Period Closing Voucher": {
+		"autoname": "erpnext_customization.fec.period_closing_voucher.autoname"
+	}
+}
 doctype_js = {
 	"Fiscal Year": ["erpnext_customization/custom_scripts/fiscal_year.js"],
 	"Payment Entry": ["erpnext_customization/custom_scripts/payment_entry.js"]
