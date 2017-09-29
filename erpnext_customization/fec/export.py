@@ -18,7 +18,7 @@ def export_csv(company_name, fiscal_year):
 	# print(data)
 
 	# filename format must be "SirenFECAAAAMMJJ.csv"
-	siret = frappe.db.get_value("Company", company_name, "siret").replace(" ", "")
+	siret = frappe.db.get_value("Company", company_name, "siret").replace(" ", "") or ""
 	fiscal_year_end_date = frappe.db.get_value("Fiscal Year", fiscal_year, "year_end_date")
 	filename = siret[:9]+"FEC"+format_datetime(fiscal_year_end_date, "yyyyMMdd")+".csv"
 
@@ -109,7 +109,7 @@ def get_result_as_list(data, company):
 			else:
 				journal_lib = "Tresorerie"
 		elif d.get("voucher_type") == "Period Closing Voucher":
-			journal_lib = "A Nouveau"
+			journal_lib = "A Nouveaux"
 		else:
 			journal_lib = "Operations Diverses"
 
@@ -121,7 +121,7 @@ def get_result_as_list(data, company):
 
 		# 5. Le numéro de compte, dont les trois premiers caractères doivent correspondre à
 		# des chiffres respectant les normes du plan comptable français
-		compte_num = d.get("account").split("|")[0].strip()
+		compte_num = '{:<08d}'.format(int(d.get("account").split("|")[0].strip()))
 
 		# 6. Le libellé de compte, conformément à la nomenclature du plan comptable français
 		compte_lib = unidecode.unidecode(d.get("account")).split("|")[-1].strip()
