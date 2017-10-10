@@ -55,6 +55,7 @@ def get_result(company,fiscal_year):
 			gl.account_currency,
 			gl.party_type,
 			gl.party,
+			gl.is_opening,
 			cust.customer_name,
 			supp.supplier_name,
 			sinv.posting_date as sinv_posting_date,
@@ -98,20 +99,21 @@ def get_result_as_list(data, company):
 		journal_code = d.get("voucher_no").split("-")[0]
 
 		# 2. Le libellé journal de l'écriture comptable
-		# journal_lib = _(d.get("voucher_type"), lang='fr')
 		if d.get("voucher_type") == "Sales Invoice":
-			journal_lib = "Ventes"
+			journal_lib = "Journal des Ventes"
 		elif d.get("voucher_type") == "Purchase Invoice":
-			journal_lib = "Achats"
+			journal_lib = "Journal des Achats"
 		elif d.get("voucher_type") == "Payment Entry":
 			if journal_code in journal_dict.keys():
 				journal_lib = journal_dict[journal_code]
 			else:
-				journal_lib = "Tresorerie"
+				journal_lib = "Journal de Tresorerie"
 		elif d.get("voucher_type") == "Period Closing Voucher":
-			journal_lib = "A Nouveaux"
+			journal_lib = "Journal de Cloture"
+		elif d.get("is_opening") == "Yes":
+			journal_lib = "Journal des A-Nouveaux"
 		else:
-			journal_lib = "Operations Diverses"
+			journal_lib = "Journal des Operations Diverses"
 
 		# 3. Le numéro sur une séquence continue de l'écriture comptable
 		ecriture_num = d.get("voucher_no").split("-")[-1]

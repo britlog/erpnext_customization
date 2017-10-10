@@ -101,7 +101,8 @@ doc_events = {
 }
 doctype_js = {
 	"Fiscal Year": ["erpnext_customization/custom_scripts/fiscal_year.js"],
-	"Payment Entry": ["erpnext_customization/custom_scripts/payment_entry.js"]
+	"Payment Entry": ["erpnext_customization/custom_scripts/payment_entry.js"],
+	"Journal Entry": ["erpnext_customization/custom_scripts/journal_entry.js"]
 }
 
 # Scheduled Tasks
