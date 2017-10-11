@@ -180,6 +180,3 @@ apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.htm
 DocType: Workflow State,Comment,Commentaire
 DocType: Contact,Salutation,Civilité
 TODO,Valid Till,Valide jusqu'au
-TODO,Journal Code,Code Journal
-TODO,Journal Label,Libellé Journal
-DocType: Sales Invoice,Tax ID,Numéro de TVA Intracommunautaire
