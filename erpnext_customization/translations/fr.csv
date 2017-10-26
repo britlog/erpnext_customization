@@ -27,7 +27,7 @@ DocType: Item Group,Show in Website,Afficher sur le Site Web
 apps/erpnext/erpnext/config/accounts.py +80,Masters,Bases
 DocType: Asset,Purchase Invoice,Facture d'Achat
 DocType: Payment Request,Payment Request,Demande de Paiement
-DocType: Bank Reconciliation Detail,Payment Entry,Règlement
+DocType: Bank Reconciliation Detail,Payment Entry,Paiement
 DocType: Depreciation Schedule,Journal Entry,Ecriture Comptable
 DocType: Journal Entry,Accounts Receivable,Créances Clients
 DocType: Journal Entry,Accounts Payable,Dettes Fournisseurs
@@ -180,3 +180,4 @@ apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.htm
 DocType: Workflow State,Comment,Commentaire
 DocType: Contact,Salutation,Civilité
 TODO,Valid Till,Valide jusqu'au
+DocType: Buying Settings,Naming Series,Séries Nommées
