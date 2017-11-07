@@ -23,3 +23,21 @@
   margin-top: -10px;
   margin-left: -10px;
 }
+.product-text {
+  border-top: 1px solid #EBEFF2;
+  padding: 10px;
+  word-wrap: break-word;
+  height: 85px;
+  display: block;
+  /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-width: 100%;
+  margin: 0 auto;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.product-image-wrapper {
+  padding-bottom: 40px;
+}
