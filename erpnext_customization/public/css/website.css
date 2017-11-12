@@ -41,3 +41,24 @@
 .product-image-wrapper {
   padding-bottom: 40px;
 }
+.shopping-cart {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-right: 0px solid #d1d8dd;
+}
+.shopping-cart .cart-icon > a, .shopping-cart .cart-icon > a:focus {
+  background-color: transparent;
+}
+.badge-wrapper {
+  display: inline-block;
+  margin-left: 7px;
+  margin-top: -3px;
+  padding: 2px 7px;
+  border: 1px solid #d1d8dd;
+  border-radius: 3px;
+  background: green;
+  color: white;
+  text-align: center;
+}
