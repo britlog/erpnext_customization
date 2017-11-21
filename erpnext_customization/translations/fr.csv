@@ -184,3 +184,4 @@ DocType: Buying Settings,Naming Series,Séries Nommées
 TODO,Only {0} in stock for item {1},Seulement {0} en stock pour l'article {1}
 apps/frappe/frappe/core/doctype/user/user.py +760,Please check your email for verification,Veuillez vérifier votre boite mail pour valider l'inscription
 DocType: Sales Invoice,Customer Address,Adresse Client
+DocType: Journal Entry,Stock Entry,Entrée en Stock
