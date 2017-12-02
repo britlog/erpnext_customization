@@ -62,3 +62,7 @@
   color: white;
   text-align: center;
 }
+.number-spinner {
+  width: 150px;
+  margin-top: 5px;
+}
