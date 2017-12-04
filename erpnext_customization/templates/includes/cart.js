@@ -74,23 +74,17 @@ $.extend(shopping_cart, {
 				newVal = 0;
 
 			if (btn.attr('data-dir') == 'up') {
-				if (oldValue >= 1) {
-					newVal = parseFloat(oldValue) + 1;
-				} else {
-					newVal = parseFloat(oldValue) + 0.1;
-				}
+				newVal = parseInt(oldValue) + 1;
 			} else if (btn.attr('data-dir') == 'dwn')  {
 				if (oldValue > 1) {
-					newVal = parseFloat(oldValue) - 1;
-				} else {
-					newVal = parseFloat(oldValue) - 0.1;
+					newVal = parseInt(oldValue) - 1;
 				}
 			}
 			else newVal = 0;
 
-			input.val(newVal.toFixed(2));
+			input.val(newVal);
 			var item_code = input.attr("data-item-code");
-			shopping_cart.shopping_cart_update(item_code, newVal.toFixed(2));
+			shopping_cart.shopping_cart_update(item_code, newVal);
 		});
 	},
 

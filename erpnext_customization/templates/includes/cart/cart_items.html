@@ -6,8 +6,8 @@
     <div class="col-sm-6 col-xs-4 col-name-description">
         {{ item_name_and_description(d) }}
     </div>
-    <div class="col-sm-2 col-xs-2 text-center col-stock-uom">
-        {{ d.get_formatted("stock_uom") }}
+    <div class="col-sm-2 col-xs-2 text-center col-sales-uom">
+        {{ d.uom }}
     </div>
     <div class="col-sm-2 col-xs-3 text-right col-qty">
         <span style="display: inline-block">
@@ -17,7 +17,7 @@
                         –</button>
                 </span>
                 <input class="form-control text-right cart-qty"
-                value = "{{ '{:.2f}'.format(d.qty) }}"
+                value = "{{ d.get_formatted('qty') }}"
                 data-item-code="{{ d.item_code }}">
                 <span class="input-group-btn">
                     <button class="btn btn-default cart-btn" data-dir="up" style="margin-left:-2px;">
