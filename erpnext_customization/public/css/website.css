@@ -54,15 +54,15 @@
 .badge-wrapper {
   display: inline-block;
   margin-left: 7px;
-  margin-top: -3px;
-  padding: 2px 7px;
+  margin-top: 2px;
+  padding: 1px 8px;
   border: 1px solid #d1d8dd;
   border-radius: 3px;
   background: green;
   color: white;
   text-align: center;
 }
-.number-spinner {
+.checkout .number-spinner {
   width: 150px;
   margin-top: 5px;
 }

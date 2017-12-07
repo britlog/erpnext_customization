@@ -5,6 +5,9 @@
 			{% include "templates/includes/navbar/navbar_link.html" %}
 		{%- endif -%}
 	{%- endfor %}
+</ul>
+{%- endif %}
+<ul class="nav navbar-nav navbar-right">
 	<li class="shopping-cart hidden">
 		<div class="cart-icon">
 			<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
@@ -14,9 +17,6 @@
 			<div id="cart-overlay" class="dropdown-menu shopping-cart-menu"></div>
 		</div>
 	 </li>
-</ul>
-{%- endif %}
-<ul class="nav navbar-nav navbar-right">
 	{%- for page in top_bar_items -%}
 		{% if not page.parent_label and page.right -%}
 			{% include "templates/includes/navbar/navbar_link.html" %}

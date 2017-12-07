@@ -169,7 +169,7 @@ apps/frappe/frappe/public/js/frappe/form/link_selector.js +106,Make a new {0},Cr
 apps/erpnext/erpnext/controllers/recurring_document.py +135,New {0}: #{1},Créer {0}: # {1}
 apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +34,Please enter valid email address,Entrez s'il vous plaît une adresse e-mail valide
 apps/frappe/frappe/email/doctype/email_group/email_group.py +87,{0} is not a valid Email Address,{0} n’est pas une adresse e-mail valide
-apps/erpnext/erpnext/templates/includes/cart/cart_dropdown.html +18,Checkout,Valider la Commande
+apps/erpnext/erpnext/templates/includes/cart/cart_dropdown.html +18,Checkout,Voir le panier
 TODO,per,par
 TODO,Not in stock,Non disponible
 TODO,In stock,En stock
