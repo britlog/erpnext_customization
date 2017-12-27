@@ -136,26 +136,32 @@ $.extend(shopping_cart, {
 	},
 
 	place_order: function(btn) {
-		return frappe.call({
-			type: "POST",
-			method: "erpnext.shopping_cart.cart.place_order",
-			btn: btn,
-			callback: function(r) {
-				if(r.exc) {
-					var msg = "";
-					if(r._server_messages) {
-						msg = JSON.parse(r._server_messages || []).join("<br>");
-					}
+		if ($('input[data-fieldname=customer_address]').length == 0 ) {
+			alert("Une adresse est obligatoire pour la première commande.");
+			window.location.href = "/addresses?new=1";
+			return false;
+		} else {
+			return frappe.call({
+				type: "POST",
+				method: "erpnext.shopping_cart.cart.place_order",
+				btn: btn,
+				callback: function(r) {
+					if(r.exc) {
+						var msg = "";
+						if(r._server_messages) {
+							msg = JSON.parse(r._server_messages || []).join("<br>");
+						}
 
-					$("#cart-error")
-						.empty()
-						.html(msg || frappe._("Something went wrong!"))
-						.toggle(true);
-				} else {
-					window.location.href = "/orders/" + encodeURIComponent(r.message);
+						$("#cart-error")
+							.empty()
+							.html(msg || frappe._("Something went wrong!"))
+							.toggle(true);
+					} else {
+						window.location.href = "/orders/" + encodeURIComponent(r.message);
+					}
 				}
-			}
-		});
+			});
+		}
 	}
 });
 
