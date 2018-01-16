@@ -69,3 +69,6 @@
 .shopping-cart-menu {
 	overflow-y: scroll;
 }
+.cart-dropdown-container .checkout-btn {
+  padding-bottom: 25px;
+}
