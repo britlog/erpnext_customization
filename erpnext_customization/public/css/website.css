@@ -70,5 +70,6 @@
 	overflow-y: scroll;
 }
 .cart-dropdown-container .checkout-btn {
+  padding-top: 0px;
   padding-bottom: 25px;
 }
