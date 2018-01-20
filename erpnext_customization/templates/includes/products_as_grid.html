@@ -1,15 +1,34 @@
 {% from "erpnext/templates/includes/macros.html" import product_image_square %}
 
-<div class="col-sm-2 col-xs-4 product-image-wrapper">
-	<a class="product-link" href="{{ route|abs_url }}">
-		<div class="product-image-img">
-			{{ product_image_square(thumbnail or website_image) }}
-			<div class="product-text" itemprop="name">{{ item_name }}</div>
-			{% if in_stock %}
-				<div style='color: green; font-size: small'> <i class='fa fa-check'></i> {{ _("In stock") }}</div>
-			{% else %}
-				<div style='color: red; font-size: small'> <i class='fa fa-close'></i> {{ _("Not in stock") }}</div>
-			{% endif %}
-		</div>
-	</a>
+<div class="col-lg-2 col-sm-3 col-xs-6 product-image-wrapper">
+	<div class="product-item">
+		<a class="product-link" href="{{ route|abs_url }}">
+			<div class="product-image-img">
+				{{ product_image_square(thumbnail or website_image) }}
+				<div class="product-text" itemprop="name">{{ item_name }}</div>
+			</div>
+		</a>
+		{% if in_stock %}
+			<div style='color: green; font-size: small'> <i class='fa fa-check'></i> {{ _("In stock") }}</div>
+		{% else %}
+			<div style='color: red; font-size: small'> <i class='fa fa-close'></i> {{ _("Not in stock") }}</div>
+		{% endif %}
+		<span style="display: inline-block; visibility:{% if in_stock %}visible{% else %}hidden{% endif %};">
+			<div class="input-group number-spinner">
+				<span class="input-group-btn">
+					<button class="btn btn-default cart-btn" data-dir="dwn">
+						–</button>
+				</span>
+				<input class="form-control text-right cart-qty"	value="1" data-item-code="{{ item_code }}">
+				<span class="input-group-btn">
+					<button class="btn btn-default cart-btn" data-dir="up" style="margin-left:-2px;">
+						+</button>
+				</span>
+				<span class="input-group-btn item-add-to-cart">
+					<button class="btn btn-default cart-btn" style="margin-left:-2px;">
+					<i class="fa fa-cart-plus fa-lg"></i></button>
+				</span>
+			</div>
+		</span>
+	</div>
 </div>
