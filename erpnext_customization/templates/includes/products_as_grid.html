@@ -8,6 +8,8 @@
 				<div class="product-text" itemprop="name">{{ item_name }}</div>
 			</div>
 		</a>
+		<div>{{ price_sales_uom }}</div>
+		<div style='font-size: small; margin-bottom: 10px;'>({{ price_stock_uom }} / {{ stock_uom }})</div>
 		{% if in_stock %}
 			<div style='color: green; font-size: small'> <i class='fa fa-check'></i> {{ _("In stock") }}</div>
 		{% else %}
