@@ -3,7 +3,7 @@
 	<!--{{parents}}-->
 	<!--<li><a href="/">{{ _("Home") }}</a></li>-->
 	{% for parent in parents %}
-		<li><a href="{{ parent.route | abs_url }}" itemprop="url"><span itemprop="title">{{ parent.name or parent.label or "" }}</span></a></li>
+		<li><a href="{{ parent.route | abs_url }}" itemprop="url"><span itemprop="title">{{ _(parent.get("name")) or _(parent.get("label")) or "" }}</span></a></li>
 	{% endfor %}
 	<li class="active"><span itemprop="title">{{ title or "" }}</span></li>
 </ul>
