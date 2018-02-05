@@ -10,6 +10,9 @@
 							data-label="{{ item.label }}">{{ item.label }}</a></li>
 						{% endfor %}
 					</ul>
+					{% if enabled_checkout %}
+						<img src="/files/logo-payment.png">
+					{% endif %}
 				</div>
 
 				{% block extension %}{% include "templates/includes/footer/footer_extension.html" %}{% endblock %}

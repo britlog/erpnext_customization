@@ -35,16 +35,17 @@
 <div class="row">
     <div class="col-sm-6">
 		<p class='small' style='padding-top: 15px;'>
-		{% if doc.doctype == 'Supplier Quotation' %}
-			<b>{{ doc.supplier_name}}</b>
-		{% else %}
-			<b>{{ doc.customer_name}}</b>
-		{% endif %}
+		<!--{% if doc.doctype == 'Supplier Quotation' %}-->
+			<!--<b>{{ doc.supplier_name}}</b>-->
+		<!--{% else %}-->
+			<!--<b>{{ doc.customer_name}}</b>-->
+		<!--{% endif %}-->
 		{% if doc.contact_display %}
-			<br>
+			<!--<br>-->
 			{{ doc.contact_display }}
 		{% endif %}
 		</p>
+		<p>Merci pour votre commande, vous pouvez payer en ligne ou lors du retrait des produits.</p>
 	</div>
     <div class="col-sm-6">
 		{% if enabled_checkout %}
@@ -111,24 +112,39 @@
 </div>
 
 <div class="cart-taxes row small">
-	{% if attachments %}
-	<div class="order-item-table">
-		<div class="row order-items order-item-header text-muted">
-			<div class="col-sm-12 h6 text-uppercase">
-				{{ _("Attachments") }}
-			</div>
-		</div>
-		<div class="row order-items">
-			<div class="col-sm-12">
-				{% for attachment in attachments %}
-				<p class="small">
-					<a href="{{ attachment.file_url }}" target="blank"> {{ attachment.file_name }} </a>
+    <div class="col-sm-6"><!-- empty --></div>
+    <div class="col-sm-6">
+		{% if enabled_checkout %}
+	        {% if (doc.doctype=="Sales Order" and doc.per_billed <= 0)
+				or (doc.doctype=="Sales Invoice" and doc.outstanding_amount > 0) %}
+			<div class="page-header-actions-block" data-html-block="header-actions">
+				<p><span style="margin-right: 20px;"><img src="/files/logo-payment.png"></span>
+				    <a href="/api/method/erpnext.accounts.doctype.payment_request.payment_request.make_payment_request?dn={{ doc.name }}&dt={{ doc.doctype }}&submit_doc=1&order_type=Shopping Cart"
+				        class="btn btn-primary btn-sm" style="font-size: 16px;">{{ _("Pay") }} {{ doc.get_formatted("grand_total") }} </a>
 				</p>
-				{% endfor %}
 			</div>
+			{% endif %}
+		{% endif %}
+	</div>
+
+{% if attachments %}
+<div class="order-item-table">
+	<div class="row order-items order-item-header text-muted">
+		<div class="col-sm-12 h6 text-uppercase">
+			{{ _("Attachments") }}
 		</div>
 	</div>
-	{% endif %}
+	<div class="row order-items">
+		<div class="col-sm-12">
+			{% for attachment in attachments %}
+			<p class="small">
+				<a href="{{ attachment.file_url }}" target="blank"> {{ attachment.file_name }} </a>
+			</p>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+{% endif %}
 </div>
 {% if doc.terms %}
 <div class="terms-and-condition text-muted small">
