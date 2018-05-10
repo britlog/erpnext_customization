@@ -18,6 +18,9 @@ $.extend(shopping_cart, {
 		shopping_cart.bind_place_order();
 		shopping_cart.bind_change_qty();
 		shopping_cart.bind_dropdown_cart_buttons();
+		 if( $('#pickup_slots').length ) {
+		 	shopping_cart.bind_pickup_slot();
+		 }
 	},
 
 	bind_address_select: function() {
@@ -53,6 +56,35 @@ $.extend(shopping_cart, {
 
 	},
 
+	bind_pickup_slot: function() {
+
+		$('input[data-fieldname=shipping_address_name]').prop("disabled",true);
+		$(".cart-pickup").on("change", "#pickup_slots", function() {
+
+			// uncheck all
+			$('input[data-fieldname=shipping_address_name]').prop('checked', false);
+
+			// check the pickup point address
+			$('input[data-address-name="'+$(this).prop('value')+'"]').prop('checked', true);
+
+			// update pickup slot
+			return frappe.call({
+					type: "POST",
+					method: "pickup.templates.pages.cart.update_pickup_slot",
+					freeze: true,
+					args: {
+						slot_name: $("#pickup_slots option:selected").text(),
+						address_name: $(this).prop('value')
+					},
+					callback: function(r) {
+						if(!r.exc) {
+
+						}
+					}
+				});
+		});
+	},
+
 	bind_place_order: function() {
 		$(".btn-place-order").on("click", function() {
 			shopping_cart.place_order(this);
@@ -80,7 +112,7 @@ $.extend(shopping_cart, {
 					newVal = parseInt(oldValue) - 1;
 				}
 			}
-			else newVal = 0;
+			else newVal = 0;	// trash icon
 
 			input.val(newVal);
 			var item_code = input.attr("data-item-code");
@@ -139,6 +171,9 @@ $.extend(shopping_cart, {
 		if ($('input[data-fieldname=customer_address]').length == 0 ) {
 			alert("Une adresse est obligatoire pour la première commande.");
 			window.location.href = "/addresses?new=1";
+			return false;
+		} else if ( $('#pickup_slots').length && !$('#pickup_slots').val() ) {
+			frappe.msgprint("Veuillez sélectionner un créneau de collecte.");
 			return false;
 		} else {
 			return frappe.call({

@@ -67,6 +67,21 @@
 			</div>
 		{% endif %}
 
+		{% if doc.items and pickup_slots %}
+		<div class="row cart-pickup">
+			<div class="col-sm-6">
+				<span class="h6 text-uppercase">{{ _("Pickup Slot") }}</span>
+				<select id="pickup_slots" class="form-control required">
+				<option value>Sélectionnez un créneau de collecte</option>
+					{% for slot in pickup_slots %}
+						<option value="{{ slot.address_name }}" {% if doc.pickup_slot == slot.name %} selected{% endif %}>{{ slot.name }}</option>
+					{% endfor %}
+				</select>
+			</div>
+			<div class="col-sm-6"><!-- empty --></div>
+		</div>
+		{% endif %}
+
 		<div class="cart-addresses">
 		{% include "templates/includes/cart/cart_address.html" %}
 		</div>

@@ -8,15 +8,17 @@
 </ul>
 {%- endif %}
 <ul class="nav navbar-nav navbar-right">
-	<li class="shopping-cart hidden">
-		<div class="cart-icon">
-			<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
-				<span class="fa fa-shopping-basket fa-2x" style="vertical-align: middle;color:white;"></span>
-				<span class="badge-wrapper" id="cart-count"></span>
-			</a>
-			<div id="cart-overlay" class="dropdown-menu shopping-cart-menu"></div>
-		</div>
-	 </li>
+	{% if shopping_cart_enabled %}
+		<li class="shopping-cart hidden">
+			<div class="cart-icon">
+				<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
+					<span class="fa fa-shopping-basket fa-2x" style="vertical-align: middle;color:white;"></span>
+					<span class="badge-wrapper" id="cart-count"></span>
+				</a>
+				<div id="cart-overlay" class="dropdown-menu shopping-cart-menu"></div>
+			</div>
+		 </li>
+	{% endif %}
 	{%- for page in top_bar_items -%}
 		{% if not page.parent_label and page.right -%}
 			{% include "templates/includes/navbar/navbar_link.html" %}

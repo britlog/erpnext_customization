@@ -188,3 +188,4 @@ DocType: Journal Entry,Stock Entry,Entrée en Stock
 TODO,Loading Payment System,Chargement du Module de Paiement
 TODO,Confirming Payment,Confirmation du Paiement
 TODO,Payment Request for {0},Demande de Paiement pour {0}
+apps/erpnext/erpnext/templates/includes/cart/cart_dropdown.html +21,Cart is Empty,Le panier est vide
