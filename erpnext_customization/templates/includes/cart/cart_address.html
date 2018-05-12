@@ -4,7 +4,7 @@
 		{% set select_address = True %}
 	{% endif %}
 	<div class="col-sm-6">
-		<div class="h6 text-uppercase">{% if pickup_slots %}{{ _("Pickup Address") }}{% else %}_("Shipping Address"){% endif %}</div>
+		<div class="h6 text-uppercase">{% if pickup_slots %}{{ _("Pickup Address") }}{% else %}{{ _("Shipping Address") }}{% endif %}</div>
 		<div id="cart-shipping-address" class="panel-group"
 			data-fieldname="shipping_address_name">
             {% for address in shipping_addresses %}
