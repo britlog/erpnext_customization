@@ -22,7 +22,7 @@
 				<div style='color: red; font-size: small'> <i class='fa fa-close'></i> {{ _("Not in stock") }}</div>
 			{% endif %}
 		{% endif %}
-		<span style="display: inline-block; visibility:{% if in_stock %}visible{% else %}hidden{% endif %};">
+		<span style="display: inline-block; visibility:{% if in_stock or not show_availability_status %}visible{% else %}hidden{% endif %};">
 			<div class="input-group number-spinner">
 				<span class="input-group-btn">
 					<button class="btn btn-default cart-btn" data-dir="dwn">
