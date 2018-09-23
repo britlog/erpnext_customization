@@ -18,16 +18,18 @@ frappe.ready(function() {
 					.html(r.message.price.formatted_price_sales_uom + "<div style='font-size: small'>\
 						(" + r.message.price.formatted_price + " / " + r.message.uom + ")</div>");
 
-				if(r.message.in_stock==0) {
-					$(".item-stock").html("<div style='color: red'> <i class='fa fa-close'></i> {{ _("Not in stock") }}</div>");
-				}
-				else if(r.message.in_stock==1) {
-					var qty_display = "{{ _("In stock") }}";
-					if (r.message.show_stock_qty) {
-						qty_display += " ("+r.message.stock_qty+")";
+				if (r.message.show_availability_status) {
+					if(r.message.in_stock==0) {
+						$(".item-stock").html("<div style='color: red'> <i class='fa fa-close'></i> {{ _("Not in stock") }}</div>");
 					}
-					$(".item-stock").html("<div style='color: green'>\
-						<i class='fa fa-check'></i> "+qty_display+"</div>");
+					else if(r.message.in_stock==1) {
+						var qty_display = "{{ _("In stock") }}";
+						if (r.message.show_stock_qty) {
+							qty_display += " ("+r.message.stock_qty+")";
+						}
+						$(".item-stock").html("<div style='color: green'>\
+							<i class='fa fa-check'></i> "+qty_display+"</div>");
+					}
 				}
 
 				if(r.message.qty) {
