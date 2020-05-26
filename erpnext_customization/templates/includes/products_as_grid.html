@@ -4,8 +4,8 @@
 	<div class="product-item">
 		<a class="product-link" href="{{ route|abs_url }}">
 			<div class="product-image-img">
-				{{ product_image_square(thumbnail or website_image) }}
-				<div class="product-text" itemprop="name">{{ item_name }}</div>
+				{{ product_image_square(thumbnail or website_image or image) }}
+				<div class="product-text" itemprop="name">{{ item_name or name }}</div>
 			</div>
 		</a>
 		{% if price_sales_uom %}

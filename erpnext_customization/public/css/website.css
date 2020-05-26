@@ -62,6 +62,11 @@
   color: white;
   text-align: center;
 }
+.pickup-wrapper {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
 .checkout .number-spinner {
   width: 150px;
   margin-top: 5px;

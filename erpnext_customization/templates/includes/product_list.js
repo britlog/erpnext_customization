@@ -14,10 +14,11 @@ window.get_product_list = function() {
 		method: "GET",
 		url: "/",
 		data: {
-			cmd: "erpnext.templates.pages.product_search.get_product_list",
+			cmd: "pickup.templates.pages.product_search.get_product_list",
 			start: window.start,
 			search: window.search,
-			product_group: window.product_group
+			product_group: window.product_group,
+			pickup_slot: frappe.get_cookie("pickup_slot")
 		},
 		dataType: "json",
 		success: function(data) {

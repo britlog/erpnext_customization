@@ -11,8 +11,12 @@
 	{% if shopping_cart_enabled %}
 		<li class="shopping-cart hidden">
 			<div class="cart-icon">
+				<span class="fa fa-map-marker fa-2x" style="vertical-align: middle;"></span>
+				<a href="/creneau" style="padding-right: 20px;">
+					<span class="pickup-wrapper" id="pickup-slot"></span>
+				</a>
 				<a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">
-					<span class="fa fa-shopping-basket fa-2x" style="vertical-align: middle;color:white;"></span>
+					<span class="fa fa-shopping-basket fa-2x" style="vertical-align: middle;"></span>
 					<span class="badge-wrapper" id="cart-count"></span>
 				</a>
 				<div id="cart-overlay" class="dropdown-menu shopping-cart-menu"></div>

@@ -53,6 +53,18 @@ $.extend(shopping_cart, {
 		} else {
 			$badge.html(0);
 		}
+
+		//pickup slot
+		var pickup_slot = frappe.get_cookie("pickup_slot");
+
+		var $cart = $('.cart-icon');
+		var $badge = $cart.find("#pickup-slot");
+
+		if(pickup_slot) {
+			$badge.html(pickup_slot);
+		} else {
+			$badge.html("Choisir un créneau de retrait");
+		}
 	},
 
 });

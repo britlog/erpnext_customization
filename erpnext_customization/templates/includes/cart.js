@@ -57,8 +57,6 @@ $.extend(shopping_cart, {
 	},
 
 	bind_pickup_slot: function() {
-
-		$('input[data-fieldname=shipping_address_name]').prop("disabled",true);
 		$(".cart-pickup").on("change", "#pickup_slots", function() {
 
 			// uncheck all
@@ -70,7 +68,7 @@ $.extend(shopping_cart, {
 			// update pickup slot
 			return frappe.call({
 					type: "POST",
-					method: "pickup.templates.pages.cart.update_pickup_slot",
+					method: "pickup.templates.pages.cart.update_quotation_pickup_slot",
 					freeze: true,
 					args: {
 						slot_name: $("#pickup_slots option:selected").text(),
@@ -197,12 +195,24 @@ $.extend(shopping_cart, {
 				}
 			});
 		}
-	}
+	},
+
 });
 
 frappe.ready(function() {
 	$(".cart-icon").hide();
 	shopping_cart.bind_events();
+
+    //set pickup slot
+    var pickup_slot = frappe.get_cookie("pickup_slot");
+    var selVal= $('#pickup_slots option').filter(function () { return $(this).text() == pickup_slot; }).val();
+    $('#pickup_slots').val(selVal);
+    $('#pickup_slots').trigger("change");
+    $('#pickup_slots').prop("disabled",true);
+
+	//shipping address depends on pickup_slot
+    $('input[data-fieldname=shipping_address_name]').prop("disabled",true);
+
 });
 
 function show_terms() {
