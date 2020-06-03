@@ -50,7 +50,7 @@ app_include_css = [
 
 # include js, css files in header of web template
 web_include_css = "/assets/erpnext_customization/css/website.css"
-web_include_js = "/assets/erpnext_customization/js/shopping_cart.js"
+# web_include_js = "/assets/erpnext_customization/js/shopping_cart.js"
 
 # Home Pages
 # ----------
