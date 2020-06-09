@@ -23,3 +23,7 @@
   margin-top: -10px;
   margin-left: -10px;
 }
+
+.navbar-brand.ellipsis {
+	max-width: none;
+}
