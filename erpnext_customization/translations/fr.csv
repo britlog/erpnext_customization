@@ -192,3 +192,13 @@ apps/erpnext/erpnext/templates/includes/cart/cart_dropdown.html +21,Cart is Empt
 TODO,Order Confirmation,Confirmation de Commande
 apps/erpnext/erpnext/public/js/payment/pos_payment.html +17,Write off,Arrondi
 TODO,Payment Ordered,Paiement Demandé
+ERPNext Customization,Email Tracking,Suivi des Emails
+ERPNext Customization,Sent,Envoyé
+ERPNext Customization,Opened,Ouvert
+ERPNext Customization,Clicked,Cliqué
+ERPNext Customization,Bounced,Renvoyé
+ERPNext Customization,Blocked,Bloqué
+ERPNext Customization,Unsubscribed,Désabonné
+ERPNext Customization,Hard Bounce,Erreur Permanente
+ERPNext Customization,Error Related To,Erreur Liée A
+ERPNext Customization,Track emails to increase deliverability.,Suivre les emails pour améliorer la délivrabilité.

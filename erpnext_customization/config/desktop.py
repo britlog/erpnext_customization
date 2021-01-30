@@ -5,10 +5,10 @@ from frappe import _
 def get_data():
 	return [
 		{
-			"module_name": "Erpnext Customization",
-			"color": "grey",
-			"icon": "octicon octicon-file-directory",
+			"module_name": "Britlog",
+			"color": "#CED941",
+			"icon": "octicon octicon-gear",
 			"type": "module",
-			"label": _("Erpnext Customization")
+			"hidden": 1
 		}
 	]
