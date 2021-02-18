@@ -27,6 +27,10 @@
 		{{ head_html or "" }}
 		{%- endif %}
 
+		{% if head_html_page is defined -%}
+		{{ head_html_page or "" }}
+		{%- endif %}
+
 		{% if theme.theme_url %}
 		<link type="text/css" rel="stylesheet" href="{{ theme.theme_url }}">
 		{% else %}
