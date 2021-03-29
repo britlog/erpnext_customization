@@ -9,6 +9,6 @@ def get_data():
 			"color": "#CED941",
 			"icon": "octicon octicon-gear",
 			"type": "module",
-			"hidden": 1
+			"label": "Britlog"
 		}
 	]
