@@ -1,208 +1,211 @@
-apps/erpnext_customization/erpnext_customization/config/desktop.py +12,Erpnext Customization,
-apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +9,Get Updates,S'inscrire à la newsletter
-apps/frappe/frappe/email/doctype/newsletter/newsletter.py +136,Thank you for your interest in subscribing to our updates,Merci de l’intérêt que vous nous portez en vous abonnant à notre newsletter
-apps/frappe/frappe/email/doctype/newsletter/newsletter.py +137,Please verify your email id,Vérifiez s'il vous plaît votre adresse e-mail
-apps/frappe/frappe/email/doctype/newsletter/newsletter.py +147,Confirm Your Email,Confirmez votre e-mail
-DocType: Purchase Invoice Item,Is Fixed Asset,Est Immobilisé
-DocType: Report,Disabled,Désactivé
-apps/frappe/frappe/www/login.html +18,Email address,Adresse e-mail
-,POS,Caisse
-apps/erpnext/erpnext/selling/doctype/customer/customer_dashboard.py +10,Pre Sales,Avant-vente
-apps/erpnext/erpnext/public/js/utils.js +116,Total Unpaid: {0},Total impayé: {0}
-DocType: Purchase Invoice,Print Language,Langue d'Impression
-DocType: Supplier,Credit Days Based On,Jours de Crédit Basés sur
-DocType: Pricing Rule,Sales Partner,Partenaire Commercial
-DocType: Sales Invoice,Sales Team,Équipe de Vente
-DocType: Sales Invoice,Time Sheet List,Liste des Temps
-DocType: Purchase Invoice,Additional Discount,Remise Supplémentaire
-DocType: Sales Invoice,Get Advances Received,Voir Acomptes Reçus
-DocType: Item,Allow over delivery or receipt upto this percent,Autoriser livraison ou réception excédentaire jusqu'à ce pourcentage
-DocType: Item,Default Material Request Type,Type de Demande Matériel par défaut
-DocType: Item,Material Issue,Problème Matériel
-DocType: Item,Will also apply for variants unless overrridden,S'appliquera également pour les variantes sauf surchargées
-DocType: Item,Will also apply to variants,S'appliquera également aux variantes
-DocType: Item,Will also apply for variants,S'appliquera également aux variantes
-DocType: Item,Supply Raw Materials for Purchase,Fournir les Matières Premières pour l'Achat
-DocType: Item Group,Show in Website,Afficher sur le Site Web
-apps/erpnext/erpnext/config/accounts.py +80,Masters,Bases
-DocType: Asset,Purchase Invoice,Facture d'Achat
-DocType: Payment Request,Payment Request,Demande de Paiement
-DocType: Bank Reconciliation Detail,Payment Entry,Paiement
-DocType: Depreciation Schedule,Journal Entry,Ecriture Comptable
-DocType: Journal Entry,Accounts Receivable,Créances Clients
-DocType: Journal Entry,Accounts Payable,Dettes Fournisseurs
-apps/erpnext/erpnext/stock/doctype/warehouse/warehouse.js +18,General Ledger,Grand Livre
-DocType: Letter Head,Letter Head,Entête
-DocType: Journal Entry,Print Heading,Intitulé d'Impression
-DocType: Workflow State,Barcode,Code-barres
-apps/erpnext/erpnext/templates/print_formats/includes/taxes.html +5,Discount Amount,Remise
-DocType: C-Form Invoice Detail,Grand Total,Total TTC
-DocType: Print Settings,Send Print as PDF,Envoyer les Documents en PDF
-DocType: Print Settings,Send Email Print Attachments as PDF (Recommended),Envoi les Documents par e-mail en PDF (recommandé)
-DocType: Print Settings,Repeat Header and Footer in PDF,Répétez Entête et Pied de Page dans le PDF
-DocType: Print Settings,Send document web view link in email,Envoyer un lien d'affichage web du document dans l'e-mail
-DocType: Print Settings,Compact Item Print,Limiter Impression Article
-DocType: Print Settings,"Always add ""Draft"" Heading for printing draft documents",Toujours ajouter l'entête ""Brouillon"" pour l'impression des brouillons
-DocType: Journal Entry,Write Off Amount,Montant de la Perte
-DocType: POS Profile,Write Off Account,Compte Créance Irrécouvrable
-DocType: POS Profile,Write Off Cost Center,Centre de Coûts Créance Irrécouvrable
-DocType: Journal Entry,Write Off,Abandon de Créances
-DocType: Purchase Invoice,Posting Time,Heure d'Enregistrement
-DocType: Sales Invoice,Is Opening Entry,Est une Ecriture d'Entrée
-DocType: Sales Team,Contribution to Net Total,Contribution au Total Net
-DocType: Purchase Invoice,Terms,Termes
-apps/erpnext/erpnext/config/accounts.py +107,Accounting Statements,Etats Comptables
-apps/erpnext/erpnext/config/accounts.py +136,Banking and Payments,Opérations Bancaires et Paiements
-apps/erpnext/erpnext/config/accounts.py +140,Update Bank Transaction Dates,Mettre à Jour les Dates de Transaction
-apps/erpnext/erpnext/config/accounts.py +146,Match Payments with Invoices,Rapprocher les Paiements des Factures
-,Bank Reconciliation Statement,État de Rapprochement Bancaire
-,Bank Clearance Summary,Synthèse de la Compensation Bancaire
-DocType: Item,Moving Average,Prix Moyen Pondéré
-DocType: Account,Warehouse,Entrepôt
-apps/erpnext/erpnext/config/learn.py +112,Newsletters,Newsletters
-DocType: Newsletter,Newsletter,Newsletter
-apps/erpnext/erpnext/stock/doctype/item/item.js +51,This Item is a Template and cannot be used in transactions. Item attributes will be copied over into the variants unless 'No Copy' is set,Cet article est un modèle et ne peut être utilisé dans les transactions. Les attributs de l'article seront copiés dans les variantes à moins que 'No Copy' soit coché
-DocType: BOM,Scrap,Rebut
-DocType: Production Order,Scrap Warehouse,Entrepôt Rebuts
-DocType: Purchase Invoice,Rejected Warehouse,Entrepôt Rejetés
-DocType: Production Order,Work-in-Progress Warehouse,Entrepôt Travaux en Cours
-,BOM Browser,Navigateur Nomenclatures
-DocType: BOM Operation,Workstation,Station de Travail
-DocType: BOM Replace Tool,BOM Replace Tool,Outil de Remplacement de Nomenclature
-DocType: Purchase Invoice Item,BOM,Nomenclature
-DocType: BOM,Rate Of Materials Based On,Prix des Matériaux Basé sur
-DocType: Workstation,Operating Costs,Coûts Opérationnels
-DocType: BOM,Manage cost of operations,Gérer le Coût des Opérations
-DocType: Account,Income Account,Compte de Produits
-DocType: Company,Default Income Account,Compte de Produits par Défaut
-DocType: Sales Invoice,Against Income Account,Sur le Compte de Produits
-DocType: Account,Expense Account,Compte de Charges
-DocType: Item Group,Default Expense Account,Compte de Charges par Défaut
-DocType: Purchase Invoice,Against Expense Account,Sur le Compte de Charges
-DocType: DocType,DocType,DocType
-apps/frappe/frappe/config/setup.py +263,Custom Tags,Balises Personnalisées
-DocType: Workflow State,Primary,Principal
-apps/frappe/frappe/public/js/frappe/views/communication.js +74,Attach Document Print,Joindre l'Impression du Document
-apps/frappe/frappe/public/js/frappe/views/communication.js +66,Send me a copy,M'envoyer une Copie
-apps/frappe/frappe/public/js/frappe/views/communication.js +81,Select Attachments,Sélectionnez les Pièces Jointes
-DocType: Workflow State,Print,Imprimer
-apps/frappe/frappe/print/doctype/print_format/print_format.js +31,Make Default,Définir par Défaut
-DocType: User,Send Notifications for Transactions I Follow,Envoyer des Notifications pour les Transactions que je Suis
-apps/erpnext/erpnext/controllers/accounts_controller.py +83,Note: Payment Entry will not be created since 'Cash or Bank Account' was not specified,Remarque: le règlement ne sera pas enregistré tant que le compte 'Cash ou compte bancaire' n'aura pas été spécifié
-DocType: Purchase Taxes and Charges,Account Head,Intitulé du Compte
-DocType: Purchase Taxes and Charges,Is this Tax included in Basic Rate?,Cette Taxe est-elle Incluse dans le Prix de Base?
-DocType: Purchase Taxes and Charges,"If checked, the tax amount will be considered as already included in the Print Rate / Print Amount","Si elle est cochée, le montant de la taxe sera considéré comme déjà inclus dans le prix / montant"
-DocType: Landed Cost Voucher,Landed Cost Voucher,Coûts Additionnels
-DocType: Purchase Invoice Item,Landed Cost Voucher Amount,Montant des Coûts Additionnels
-apps/frappe/frappe/desk/doctype/todo/todo_list.js +7,To Do,To Do
-DocType: Purchase Invoice,Is Return,Est un Retour
-DocType: Journal Entry Account,Purchase Order,Commande d'Achat
-apps/erpnext/erpnext/buying/doctype/purchase_order/purchase_order.js +846,Supplier Quotation,Offre Fournisseur
-DocType: Request for Quotation,Request for Quotation,Appel d'Offres
-,Stock Ageing,Ancienneté du Stock
-apps/erpnext/erpnext/accounts/doctype/purchase_invoice/purchase_invoice.js +743,Purchase Receipt,Bon de Réception
-,Stock Ledger,Registre des Stocks
-DocType: Stock Entry,Repack,Reconditionnement
-DocType: Stock Entry,Subcontract,Sous-traitance
-DocType: Purchase Invoice,Taxes and Charges Added,Taxes et Charges Ajoutées
-DocType: POS Profile,Taxes and Charges,Taxes et Charges
-apps/erpnext/erpnext/public/js/controllers/transaction.js +878,Show tax break-up,Afficher rupture par taxe
-DocType: Purchase Invoice,Terms and Conditions1,Termes et Conditions
-DocType: Payment Entry,Party Name,Nom de la Partie
-DocType: GL Entry,Party,Partie
-apps/erpnext/erpnext/accounts/report/general_ledger/general_ledger.js +75,Group by Voucher,Grouper par Bon
-DocType: Quotation Item,Stock Balance,Stock
-DocType: Stock Reconciliation,Stock Reconciliation,Réconciliation des Stocks
-DocType: Asset,Item Code,Code de l'Article
-apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +35,Opening Qty,Qté Ouverture
-apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +47,Opening Value,Valeur Ouverture
-apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,In Qty,Qté Entrée
-apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +49,In Value,Valeur Entrée
-apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,Out Qty,Qté Sortie
-apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +51,Out Value,Valeur Sortie
-apps/erpnext/erpnext/stock/report/batch_wise_balance_history/batch_wise_balance_history.py +36,Balance Qty,Différence Qté
-apps/erpnext/erpnext/stock/report/stock_balance/stock_balance.py +53,Balance Value,Différence Valeur
-,Document Share Report,Rapport des Documents Partagés
-DocType: Purchase Invoice Item,Price List Rate,Prix de la Liste des Prix
-DocType: Purchase Invoice Item,Net Rate,Prix Net
-DocType: Sales Invoice Item,Drop Ship,Livraison Directe
-DocType: Item,Delivered by Supplier (Drop Ship),Livré par le Fournisseur (Livraison Directe)
-apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +516,Pick Columns,Choisir les Colonnes
-apps/frappe/frappe/public/js/frappe/views/reports/reportview.js +609,Set Sort,Paramétrer le Tri
-DocType: Newsletter,Create and Send Newsletters,Créer et Envoyer des Newsletters
-apps/frappe/frappe/email/doctype/email_group/email_group.js +11,Import Subscribers,Importer des Abonnés
-apps/frappe/frappe/email/doctype/email_group/email_group.js +43,New Newsletter,Nouvelle Newsletter
-DocType: Item,Is Purchase Item,Est un Article Acheté
-DocType: Item,Is Sales Item,Est un Article Vendu
-DocType: Item,Has Variants,A des Variantes
-DocType: Item Tax,Tax Rate,Taux d'Imposition
-DocType: Customer,Individual,Particulier
-apps/frappe/frappe/templates/generators/web_form.html +52,Please sign-up or login to begin,Connectez-vous s'il vous plaît pour commencer
-DocType: Supplier Quotation,Opportunity,Opportunité
-DocType: Opportunity,Mins to first response,Mins avant la première réponse
-DocType: Opportunity,Opportunity From,Opportunité Depuis
-apps/erpnext/erpnext/buying/doctype/supplier_quotation/supplier_quotation_list.js +7,Lost,Perdu
-DocType: Opportunity,Contact Info,Coordonnées
-DocType: Opportunity,Opportunity Date,Date de l'Opportunité
-DocType: Opportunity,Enter name of campaign if source of enquiry is campaign,Entrez le nom de la campagne si la source de la demande est une campagne
-DocType: Opportunity,Next Contact,Prochain Contact
-DocType: Lead,Next Contact By,Prochain Contact Par
-DocType: Opportunity,To Discuss,A Discuter
-DocType: Note,Note,Note
-apps/frappe/frappe/desk/doctype/note/note_list.js +3,Notes,Notes
-DocType: Note Seen By,Note Seen By,Note Vue Par
-,Minutes to First Response for Opportunity,Minutes Avant la Première Réponse à une Opportunité
-apps/erpnext/erpnext/config/crm.py +6,Sales Pipeline,Pipeline des Ventes
-apps/erpnext/erpnext/config/learn.py +107,Lead to Quotation,Du Prospect au Devis
-,Quotation Trends,Evolution des Devis
-,Sales Order Trends,Evolution des Commandes
-apps/frappe/frappe/templates/includes/comments/comments.html +39,Your email address,Votre adresse e-mail
-apps/frappe/frappe/www/login.html +30,Sign In,Se Connecter
-apps/frappe/frappe/www/login.html +89,Sign Up,S'inscrire
-apps/frappe/frappe/public/js/frappe/form/toolbar.js +189,New {0} (Ctrl+B),Créer {0} (Ctrl + B)
-apps/frappe/frappe/core/doctype/communication/communication_list.js +26,New,Créer
-apps/frappe/frappe/public/js/frappe/views/treeview.js +212,New {0},Créer {0}
-apps/frappe/frappe/public/js/frappe/form/multi_select_dialog.js +58,Make a new,Créer
-apps/frappe/frappe/public/js/frappe/form/control.js +1407,Create a new {0},Créer {0}
-apps/frappe/frappe/public/js/frappe/views/treeview.js +223,Create New,Créer
-apps/frappe/frappe/public/js/frappe/form/link_selector.js +106,Make a new {0},Créer {0}
-apps/erpnext/erpnext/controllers/recurring_document.py +135,New {0}: #{1},Créer {0}: # {1}
-apps/erpnext/erpnext/templates/includes/footer/footer_extension.html +34,Please enter valid email address,Entrez s'il vous plaît une adresse e-mail valide
-apps/frappe/frappe/email/doctype/email_group/email_group.py +87,{0} is not a valid Email Address,{0} n’est pas une adresse e-mail valide
-apps/erpnext/erpnext/templates/includes/cart/cart_dropdown.html +18,Checkout,Voir le panier
-TODO,per,par
-TODO,Not in stock,Non disponible
-TODO,In stock,En stock
-TODO,Nothing more to show.,Rien d'autre à afficher.
-TODO,No products found.,Aucun produit trouvé.
-apps/frappe/frappe/website/doctype/blog_post/blog_post.py +98,Posts filed under {0},Messages déposés sous {0}
-apps/erpnext/erpnext/accounts/report/accounts_receivable/accounts_receivable.html +77,Printed On,Imprimé Le
-DocType: Workflow State,Comment,Commentaire
-DocType: Contact,Salutation,Civilité
-TODO,Valid Till,Valide jusqu'au
-DocType: Buying Settings,Naming Series,Séries Nommées
-TODO,Only {0} in stock for item {1},Seulement {0} en stock pour l'article {1}
-apps/frappe/frappe/core/doctype/user/user.py +760,Please check your email for verification,Veuillez vérifier votre boite mail pour valider l'inscription
-DocType: Sales Invoice,Customer Address,Adresse Client
-DocType: Journal Entry,Stock Entry,Entrée en Stock
-TODO,Loading Payment System,Chargement du Module de Paiement
-TODO,Confirming Payment,Confirmation du Paiement
-TODO,Payment Request for {0},Demande de Paiement pour {0}
-apps/erpnext/erpnext/templates/includes/cart/cart_dropdown.html +21,Cart is Empty,Le panier est vide
-TODO,Order Confirmation,Confirmation de Commande
-apps/erpnext/erpnext/public/js/payment/pos_payment.html +17,Write off,Arrondi
-TODO,Payment Ordered,Paiement Demandé
-ERPNext Customization,Email Tracking,Suivi des Emails
-ERPNext Customization,Sent,Envoyé
-ERPNext Customization,Opened,Ouvert
-ERPNext Customization,Clicked,Cliqué
-ERPNext Customization,Bounced,Renvoyé
-ERPNext Customization,Blocked,Bloqué
-ERPNext Customization,Unsubscribed,Désabonné
-ERPNext Customization,Hard Bounce,Erreur Permanente
-ERPNext Customization,Error Related To,Erreur Liée A
-ERPNext Customization,Track emails to increase deliverability.,Suivre les emails pour améliorer la délivrabilité.
-ERPNext Customization,Set Shipping Address or Billing Address,Veuillez choisir une adresse de livraison ou facturation
-ERPNext Customization,Add a new address,Ajouter une nouvelle adresse
-ERPNext Customization,New Address,Nouvelle Adresse
-ERPNext Customization,More details,Plus de détails
+Erpnext Customization,
+Get Updates,S'inscrire à la newsletter,
+Thank you for your interest in subscribing to our updates,Merci de l’intérêt que vous nous portez en vous abonnant à notre newsletter,
+Please verify your email id,Vérifiez s'il vous plaît votre adresse e-mail,
+Confirm Your Email,Confirmez votre e-mail,
+Is Fixed Asset,Est Immobilisé,
+Disabled,Désactivé,
+Email address,Adresse e-mail,
+POS,Caisse,
+Pre Sales,Avant-vente,
+Total Unpaid: {0},Total impayé: {0},
+Print Language,Langue d'Impression,
+Credit Days Based On,Jours de Crédit Basés sur,
+Sales Partner,Partenaire Commercial,
+Sales Team,Équipe de Vente,
+Time Sheet List,Liste des Temps,
+Additional Discount,Remise Supplémentaire,
+Get Advances Received,Voir Acomptes Reçus,
+Allow over delivery or receipt upto this percent,Autoriser livraison ou réception excédentaire jusqu'à ce pourcentage,
+Default Material Request Type,Type de Demande Matériel par défaut,
+Material Issue,Problème Matériel,
+Will also apply for variants unless overrridden,S'appliquera également pour les variantes sauf surchargées,
+Will also apply to variants,S'appliquera également aux variantes,
+Will also apply for variants,S'appliquera également aux variantes,
+Supply Raw Materials for Purchase,Fournir les Matières Premières pour l'Achat,
+Show in Website,Afficher sur le Site Web,
+Masters,Bases,
+Purchase Invoice,Facture d'Achat,
+Payment Request,Demande de Paiement,
+Payment Entry,Paiement,
+Journal Entry,Ecriture Comptable,
+Accounts Receivable,Créances Clients,
+Accounts Payable,Dettes Fournisseurs,
+General Ledger,Grand Livre,
+Letter Head,Entête,
+Print Heading,Intitulé d'Impression,
+Barcode,Code-barres,
+Discount Amount,Remise,
+Grand Total,Total TTC,
+Send Print as PDF,Envoyer les Documents en PDF,
+Send Email Print Attachments as PDF (Recommended),Envoi les Documents par e-mail en PDF (recommandé),
+Repeat Header and Footer in PDF,Répétez Entête et Pied de Page dans le PDF,
+Send document web view link in email,Envoyer un lien d'affichage web du document dans l'e-mail,
+Compact Item Print,Limiter Impression Article,
+"Always add ""Draft"" Heading for printing draft documents",Toujours ajouter l'entête ""Brouillon"" pour l'impression des brouillons,
+Write Off Amount,Montant de la Perte,
+Write Off Account,Compte Créance Irrécouvrable,
+Write Off Cost Center,Centre de Coûts Créance Irrécouvrable,
+Write Off,Abandon de Créances,
+Posting Time,Heure d'Enregistrement,
+Is Opening Entry,Est une Ecriture d'Entrée,
+Contribution to Net Total,Contribution au Total Net,
+Terms,Termes,
+Accounting Statements,Etats Comptables,
+Banking and Payments,Opérations Bancaires et Paiements,
+Update Bank Transaction Dates,Mettre à Jour les Dates de Transaction,
+Match Payments with Invoices,Rapprocher les Paiements des Factures,
+Bank Reconciliation Statement,État de Rapprochement Bancaire,
+Bank Clearance Summary,Synthèse de la Compensation Bancaire,
+Moving Average,Prix Moyen Pondéré,
+Warehouse,Entrepôt,
+Newsletters,Newsletters,
+Newsletter,Newsletter,
+This Item is a Template and cannot be used in transactions. Item attributes will be copied over into the variants unless 'No Copy' is set,Cet article est un modèle et ne peut être utilisé dans les transactions. Les attributs de l'article seront copiés dans les variantes à moins que 'No Copy' soit coché,
+Scrap,Rebut,
+Scrap Warehouse,Entrepôt Rebuts,
+Rejected Warehouse,Entrepôt Rejetés,
+Work-in-Progress Warehouse,Entrepôt Travaux en Cours,
+BOM Browser,Navigateur Nomenclatures,
+Workstation,Station de Travail,
+BOM Replace Tool,Outil de Remplacement de Nomenclature,
+BOM,Nomenclature,
+Rate Of Materials Based On,Prix des Matériaux Basé sur,
+Operating Costs,Coûts Opérationnels,
+Manage cost of operations,Gérer le Coût des Opérations,
+Income Account,Compte de Produits,
+Default Income Account,Compte de Produits par Défaut,
+Against Income Account,Sur le Compte de Produits,
+Expense Account,Compte de Charges,
+Default Expense Account,Compte de Charges par Défaut,
+Against Expense Account,Sur le Compte de Charges,
+DocType,DocType,
+Custom Tags,Balises Personnalisées,
+Primary,Principal,
+Attach Document Print,Joindre l'Impression du Document,
+Send me a copy,M'envoyer une Copie,
+Select Attachments,Sélectionnez les Pièces Jointes,
+Print,Imprimer,
+Make Default,Définir par Défaut,
+Send Notifications for Transactions I Follow,Envoyer des Notifications pour les Transactions que je Suis,
+Note: Payment Entry will not be created since 'Cash or Bank Account' was not specified,Remarque: le règlement ne sera pas enregistré tant que le compte 'Cash ou compte bancaire' n'aura pas été spécifié,
+Account Head,Intitulé du Compte,
+Is this Tax included in Basic Rate?,Cette Taxe est-elle Incluse dans le Prix de Base?,
+"If checked, the tax amount will be considered as already included in the Print Rate / Print Amount","Si elle est cochée, le montant de la taxe sera considéré comme déjà inclus dans le prix / montant",
+Landed Cost Voucher,Coûts Additionnels,
+Landed Cost Voucher Amount,Montant des Coûts Additionnels,
+To Do,To Do,
+Is Return,Est un Retour,
+Purchase Order,Commande d'Achat,
+Supplier Quotation,Offre Fournisseur,
+Request for Quotation,Appel d'Offres,
+Stock Ageing,Ancienneté du Stock,
+Purchase Receipt,Bon de Réception,
+Stock Ledger,Registre des Stocks,
+Repack,Reconditionnement,
+Subcontract,Sous-traitance,
+Taxes and Charges Added,Taxes et Charges Ajoutées,
+Taxes and Charges,Taxes et Charges,
+Show tax break-up,Afficher rupture par taxe,
+Terms and Conditions,Termes et Conditions,
+Party Name,Nom de la Partie,
+Party,Partie,
+Group by Voucher,Grouper par Bon,
+Stock Balance,Stock,
+Stock Reconciliation,Réconciliation des Stocks,
+Item Code,Code de l'Article,
+Opening Qty,Qté Ouverture,
+Opening Value,Valeur Ouverture,
+In Qty,Qté Entrée,
+In Value,Valeur Entrée,
+Out Qty,Qté Sortie,
+Out Value,Valeur Sortie,
+Balance Qty,Différence Qté,
+Balance Value,Différence Valeur,
+Document Share Report,Rapport des Documents Partagés,
+Price List Rate,Prix de la Liste des Prix,
+Net Rate,Prix Net,
+Drop Ship,Livraison Directe,
+Delivered by Supplier (Drop Ship),Livré par le Fournisseur (Livraison Directe),
+Pick Columns,Choisir les Colonnes,
+Set Sort,Paramétrer le Tri,
+Create and Send Newsletters,Créer et Envoyer des Newsletters,
+Import Subscribers,Importer des Abonnés,
+New Newsletter,Nouvelle Newsletter,
+Is Purchase Item,Est un Article Acheté,
+Is Sales Item,Est un Article Vendu,
+Has Variants,A des Variantes,
+Tax Rate,Taux d'Imposition,
+Individual,Particulier,
+Please sign-up or login to begin,Connectez-vous s'il vous plaît pour commencer,
+Opportunity,Opportunité,
+Mins to first response,Mins avant la première réponse,
+Opportunity From,Opportunité Depuis,
+Lost,Perdu,
+Contact Info,Coordonnées,
+Opportunity Date,Date de l'Opportunité,
+Enter name of campaign if source of enquiry is campaign,Entrez le nom de la campagne si la source de la demande est une campagne,
+Next Contact,Prochain Contact,
+Next Contact By,Prochain Contact Par,
+To Discuss,A Discuter,
+Note,Note,
+Notes,Notes,
+Note Seen By,Note Vue Par,
+Minutes to First Response for Opportunity,Minutes Avant la Première Réponse à une Opportunité,
+Sales Pipeline,Pipeline des Ventes,
+Lead to Quotation,Du Prospect au Devis,
+Quotation Trends,Evolution des Devis,
+Sales Order Trends,Evolution des Commandes,
+Your email address,Votre adresse e-mail,
+Sign In,Se Connecter,
+Sign Up,S'inscrire,
+New {0} (Ctrl+B),Créer {0} (Ctrl + B),
+New,Créer,
+New {0},Créer {0},
+Make a new,Créer,
+Create a new {0},Créer {0},
+Create New,Créer,
+Make a new {0},Créer {0},
+New {0}: #{1},Créer {0}: # {1},
+Please enter valid email address,Entrez s'il vous plaît une adresse e-mail valide,
+{0} is not a valid Email Address,{0} n’est pas une adresse e-mail valide,
+Checkout,Voir le panier,
+per,par,
+Not in stock,Non disponible,
+In stock,En stock,
+Nothing more to show.,Rien d'autre à afficher.,
+No products found.,Aucun produit trouvé.,
+Posts filed under {0},Messages déposés sous {0},
+Printed On,Imprimé Le,
+Comment,Commentaire,
+Salutation,Civilité,
+Valid Till,Valide jusqu'au,
+Naming Series,Séries Nommées,
+Only {0} in stock for item {1},Seulement {0} en stock pour l'article {1},
+Please check your email for verification,Veuillez vérifier votre boite mail pour valider l'inscription,
+Customer Address,Adresse Client,
+Stock Entry,Entrée en Stock,
+Loading Payment System,Chargement du Module de Paiement,
+Confirming Payment,Confirmation du Paiement,
+Payment Request for {0},Demande de Paiement pour {0},
+Cart is Empty,Le panier est vide,
+Order Confirmation,Confirmation de Commande,
+Write off,Arrondi,
+Payment Ordered,Paiement Demandé,
+Email Tracking,Suivi des Emails,
+Sent,Envoyé,
+Opened,Ouvert,
+Clicked,Cliqué,
+Bounced,Renvoyé,
+Blocked,Bloqué,
+Unsubscribed,Désabonné,
+Hard Bounce,Erreur Permanente,
+Error Related To,Erreur Liée A,
+Track emails to increase deliverability.,Suivre les emails pour améliorer la délivrabilité.,
+ESet Shipping Address or Billing Address,Veuillez choisir une adresse de livraison ou facturation,
+Add a new address,Ajouter une nouvelle adresse,
+New Address,Nouvelle Adresse,
+More details,Plus de détails,
+Show,Afficher,
+Don't have an account?,Pas de compte ?,
+Login to {0},Se connecter à {0},
