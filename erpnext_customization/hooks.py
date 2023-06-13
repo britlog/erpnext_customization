@@ -12,11 +12,18 @@ app_email = "info@britlog.com"
 app_license = "MIT"
 source_link = "https://github.com/britlog/erpnext_customization"
 
-fixtures = ["Custom Field",
-"Property Setter",
-"Custom Script",
-"Print Format"]
-
+fixtures = [
+    {
+        "dt": ("Custom Field"),
+        "filters": [["name", "in", (
+			"E Commerce Settings-section_break_15",
+			"E Commerce Settings-order_confirmation",
+			"Website Settings-facebook_link",
+			"Website Settings-footer_company_name",
+			"Web Page-head_html_page"
+		)]]
+    },
+]
 
 # website
 update_website_context = "erpnext_customization.website.utils.update_website_context"
