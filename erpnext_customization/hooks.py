@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 app_name = "erpnext_customization"
-app_title = "Erpnext Customization"
+app_title = "ERPNext Customization"
 app_publisher = "britlog"
 app_description = "App to maintain custom changes"
 app_icon = "octicon octicon-file-directory"
