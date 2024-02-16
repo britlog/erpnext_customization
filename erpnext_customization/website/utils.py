@@ -10,5 +10,3 @@ import frappe.defaults
 def update_website_context(context):
 	context["footer_company_name"] = frappe.db.get_singles_value("Website Settings", "footer_company_name")
 	context["facebook_link"] = frappe.db.get_singles_value("Website Settings", "facebook_link")
-	context["enabled_checkout"] = frappe.db.get_singles_value("E Commerce Settings", "enable_checkout")
-	context["shopping_cart_enabled"] = frappe.db.get_singles_value("E Commerce Settings", "enabled")
