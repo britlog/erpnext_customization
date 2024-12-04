@@ -43,7 +43,7 @@ update_website_context = "erpnext_customization.website.utils.update_website_con
 # app_include_js = "/assets/erpnext_customization/js/erpnext_customization.js"
 
 # include js, css files in header of web template
-web_include_css = "/assets/erpnext_customization/css/website.css"
+web_include_css = "/assets/frappe/css/fonts/fontawesome/font-awesome.min.css"
 # web_include_js = "/assets/erpnext_customization/js/shopping_cart.js"
 
 # Home Pages
